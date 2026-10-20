@@ -41,4 +41,6 @@ Citation metadata are in [CITATION.cff](CITATION.cff); a DOI will be supplied on
 
 AI tools assisted parts of literature comparison, mathematical derivation and checking, research instrumentation, and manuscript drafting. The author directs the study and remains responsible for its claims. Independent scholarly review and the historical theorem-priority assessment remain open.
 
+Original author-owned Python and shell code in this repository uses the [MIT License](LICENSE-MIT). The manuscript retains CC BY 4.0.
+
 See [PUBLICATION_SCOPE.md](PUBLICATION_SCOPE.md) for the public/private boundary and release checklist.
