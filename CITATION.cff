@@ -1,0 +1,15 @@
+cff-version: 1.2.0
+message: "Please cite the manuscript. A DOI will be added after an authorized public deposit."
+title: "Recoverability after Knowledge Invalidation: Contingent Safety Budgets and the Limits of Observable Evidence"
+authors:
+  - family-names: Miyamoto
+    given-names: Yukitake
+    affiliation: "Independent Researcher, Japan"
+version: "0.6.1"
+license: CC-BY-4.0
+abstract: >-
+  A finite decision-theoretic characterization of safe, warranted knowledge
+  recovery under exact verification, old-version quarantine, dependent
+  witness validity, and a hard worst-path action budget. This is a working
+  preprint; external peer review and independent mathematical certification
+  are not claimed.
