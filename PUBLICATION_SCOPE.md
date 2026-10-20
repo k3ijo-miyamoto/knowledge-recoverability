@@ -21,6 +21,18 @@ The selected paper candidate is **v0.6.1**. Its 19-page XeLaTeX PDF passed an in
 
 The author-approved [v0.6.1 manuscript PDF](paper/knowledge_recoverability_v0.6.1.pdf) has been publicly released in this repository; its SHA-256 is `053b228058438412c36f9e51022cabd7f7f41652afe57b726feca04a49394d06`. The corresponding Zenodo DOI is **not assigned**. A curated synthetic code, fixture, and compact-results subset is included, subject to the reproducibility limits in REPRODUCIBILITY.md. Other research evidence remains private. In particular, manuscript identifiers `[S0]` through `[S20]` are *private evidence-role identifiers*, not public links.
 
+## Curated C1/P2 release — 21 October 2026
+
+The public supplement now includes seven C1/P2 source files, two
+historical receipt-inspection test files, and three compact saved
+result files. File SHA-256 values are listed in
+C1_P2_SOURCE_INVENTORY_SHA256.txt.
+
+These results do not constitute a complete independent replay package.
+Original runtime receipts, full PyPI snapshots, process metadata,
+historical execution logs, and private handovers are not published.
+See REPRODUCIBILITY.md for the bounded scientific interpretation.
+
 ## Before publishing any additional artifact
 
 1. Confirm author's explicit approval for release of that **exact** PDF/file and the rights (including any employer and third-party concerns).

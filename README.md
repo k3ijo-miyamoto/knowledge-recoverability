@@ -27,7 +27,8 @@ Here `u` and `v` are witness-validity marginals and `j` is their joint success p
 | Manuscript v0.6.1 | **Released** — [v0.6.1 manuscript PDF](paper/knowledge_recoverability_v0.6.1.pdf) (19 pages, CC BY 4.0) |
 | Zenodo DOI | **Not assigned** |
 | X0-A/X0-B/Audit Allocation code and selected evidence | **Released** — see [REPRODUCIBILITY.md](REPRODUCIBILITY.md) |
-| C1/P2 and other historical receipts | **Not publicly released** |
+| C1/P2 selected code and compact results | **Released** — see [REPRODUCIBILITY.md](REPRODUCIBILITY.md) |
+| C1/P2 raw receipts, full source snapshots and other historical records | **Not publicly released** |
 | Independent W1 semantic-verification service or production safety certificate | **Not established** |
 
 The manuscript documents the core mathematics and a set of bounded synthetic and software diagnostic controls. Control observations are not demonstrations of real-world all-route safety, and counts of deterministic rows are not independent empirical samples.
@@ -50,8 +51,7 @@ published later (commit [`1bf4cdd`](https://github.com/k3ijo-miyamoto/knowledge-
 These additions **do not** make the private `[S0]`–`[S20]` research records,
 historical run receipts or handovers public, and they do not demonstrate an
 independently reproduced test suite or mathematical proof certification.
-C1/P2 diagnostic implementations and runtime receipts are not released at
-this date. The manuscript itself remains frozen at v0.6.1 rather than being
+At the time of the earlier release note, C1/P2 was not yet public. Selected C1/P2 source and compact results were subsequently added; raw runtime receipts remain private. The manuscript itself remains frozen at v0.6.1 rather than being
 silently retroactively revised.
 
 ## Citation and licensing

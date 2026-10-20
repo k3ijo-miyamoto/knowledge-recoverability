@@ -1,0 +1,85 @@
+{
+  "verdict": "PASS",
+  "pre_egress_equal": true,
+  "q1_only_indistinguishable": true,
+  "q1_plus_q2_distinguishes": true,
+  "source_scores": {
+    "GOOD": {
+      "q1": {
+        "source_agrees": true,
+        "old_served": 0,
+        "claim_scope": "issuer-declared snapshot fidelity only",
+        "P4b": "NOT_ESTABLISHED",
+        "delta_zero": "NOT_TESTED"
+      },
+      "q2": {
+        "source_agrees": true,
+        "old_served": 0,
+        "claim_scope": "issuer-declared snapshot fidelity only",
+        "P4b": "NOT_ESTABLISHED",
+        "delta_zero": "NOT_TESTED"
+      }
+    },
+    "STALE_EGRESS": {
+      "q1": {
+        "source_agrees": true,
+        "old_served": 0,
+        "claim_scope": "issuer-declared snapshot fidelity only",
+        "P4b": "NOT_ESTABLISHED",
+        "delta_zero": "NOT_TESTED"
+      },
+      "q2": {
+        "source_agrees": false,
+        "old_served": 1,
+        "claim_scope": "issuer-declared snapshot fidelity only",
+        "P4b": "NOT_ESTABLISHED",
+        "delta_zero": "NOT_TESTED"
+      }
+    }
+  },
+  "old_answer_counts": {
+    "GOOD": 0,
+    "STALE_EGRESS": 1
+  },
+  "finite_domain_judgments": {
+    "GOOD": {
+      "q1_only_source_consistent": true,
+      "all_D_source_consistent": true
+    },
+    "STALE_EGRESS": {
+      "q1_only_source_consistent": true,
+      "all_D_source_consistent": false
+    }
+  },
+  "egress_client_hash_checks": [
+    {
+      "world": "GOOD",
+      "query": "q1",
+      "sha256": "5f9387a70b20840b14f742f13320ff4b7c88302320c52e040efa106840116608",
+      "bytes": 365,
+      "matches": true
+    },
+    {
+      "world": "GOOD",
+      "query": "q2",
+      "sha256": "99df000ebffc82cbeb7cc280cfb597c310b200e4494a1c06f4897a2534634ced",
+      "bytes": 365,
+      "matches": true
+    },
+    {
+      "world": "STALE_EGRESS",
+      "query": "q1",
+      "sha256": "5f9387a70b20840b14f742f13320ff4b7c88302320c52e040efa106840116608",
+      "bytes": 365,
+      "matches": true
+    },
+    {
+      "world": "STALE_EGRESS",
+      "query": "q2",
+      "sha256": "052cc574e8a4aff6bfe6c9f09fd4d284998934e9e7ea7d6c85468db587a1a865",
+      "bytes": 367,
+      "matches": true
+    }
+  ],
+  "meaning": "Finite-domain source fidelity; not general safety, semantic W1, P4b, novelty or delta=0."
+}
