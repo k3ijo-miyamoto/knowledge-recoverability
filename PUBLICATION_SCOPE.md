@@ -1,0 +1,32 @@
+# Public release boundary and checklist
+
+This repository is a **curated publication surface** for the working preprint by Yukitake Miyamoto. It is deliberately separate from the private research repository `k3ijo-miyamoto/AssuredKnowledgeEvolution`.
+
+## What may appear here
+
+- Author-approved, rights-reviewed **final manuscript PDF** (after validating its exact SHA-256 and readable pages).
+- The corresponding public-facing explanatory README, citation metadata and manuscript copyright/license notice.
+- Supplementary code, fixtures or evidence **only after** a specific public-scope review (separate rights and software licensing, reproducibility and privacy screening, checksums and full source attribution).
+
+## What must not be copied automatically
+
+- The private research repository's Git history, branches, issue discussions or private AGENTS/ADR files.
+- Internal `reports/`, `artifacts/`, experimental scratch files, logs, Git SHA/provenance matrices or unreviewed code.
+- Customer/employer data, credentials, personal identifiers, private evidence sources or third-party copyrighted PDFs.
+- Material whose permission, ownership or third-party license status has not been assessed.
+
+## Current state
+
+The selected paper candidate is **v0.6.1**. Its 19-page XeLaTeX PDF passed an internal *layout* review, with a minor nonblocking page-break imperfection; independent proof checking, historical novelty verification, data/code reproducibility and publication rights clearance remain separate matters.
+
+The PDF is **not yet in this public repository**. The corresponding Zenodo DOI is **not assigned**. No public supplemental data package exists. In particular, manuscript identifiers `[S0]` through `[S20]` are *private evidence-role identifiers*, not public links.
+
+## Before publishing any additional artifact
+
+1. Confirm author's explicit approval for release of that **exact** PDF/file and the rights (including any employer and third-party concerns).
+2. Confirm the specific bytes with SHA-256, current byline, version, preprint status, CC BY 4.0 scope, citations and complete rendered math.
+3. Make a fresh public-only commit, **not a repository mirror**, and inspect exactly the staged paths before pushing.
+4. Once actually released, update `README.md`, `CITATION.cff`, and this status to include only authentic persistent links and identifiers.
+5. Register at Zenodo only following a separate explicit submission authorization. Do not invent or preannounce a DOI.
+
+The absence of open evidence does not weaken the obligation to communicate limitations; it means the PDF alone is not a complete end-to-end replication package.
