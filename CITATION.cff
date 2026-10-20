@@ -6,6 +6,7 @@ authors:
     given-names: Yukitake
     affiliation: "Independent Researcher, Japan"
 version: "0.6.1"
+url: "https://github.com/k3ijo-miyamoto/knowledge-recoverability/blob/main/paper/knowledge_recoverability_v0.6.1.pdf"
 license: CC-BY-4.0
 abstract: >-
   A finite decision-theoretic characterization of safe, warranted knowledge

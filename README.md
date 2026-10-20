@@ -24,7 +24,7 @@ Here `u` and `v` are witness-validity marginals and `j` is their joint success p
 
 | Material | Current public status |
 | --- | --- |
-| Manuscript v0.6.1 | **Pending author-approved release**; not yet added to this repository |
+| Manuscript v0.6.1 | **Released** — [v0.6.1 manuscript PDF](paper/knowledge_recoverability_v0.6.1.pdf) (19 pages, CC BY 4.0) |
 | Zenodo DOI | **Not assigned** |
 | Research source code, fixed fixtures, run receipts and raw logs | **Not publicly released** |
 | Independent W1 semantic-verification service or production safety certificate | **Not established** |
@@ -32,6 +32,8 @@ Here `u` and `v` are witness-validity marginals and `j` is their joint success p
 The manuscript documents the core mathematics and a set of bounded synthetic and software diagnostic controls. Control observations are not demonstrations of real-world all-route safety, and counts of deterministic rows are not independent empirical samples.
 
 This public repository is **not a mirror** of the private research workspace. Private research discussions, historical Git commits, internal reports, and unreviewed artifacts are intentionally excluded. Source labels such as `[S0]–[S20]` describe private evidence roles and must not be interpreted as public download links.
+
+**PDF SHA-256:** `053b228058438412c36f9e51022cabd7f7f41652afe57b726feca04a49394d06`. No Zenodo DOI has been assigned.
 
 ## Citation and licensing
 

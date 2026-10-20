@@ -17,9 +17,9 @@ This repository is a **curated publication surface** for the working preprint by
 
 ## Current state
 
-The selected paper candidate is **v0.6.1**. Its 19-page XeLaTeX PDF passed an internal *layout* review, with a minor nonblocking page-break imperfection; independent proof checking, historical novelty verification, data/code reproducibility and publication rights clearance remain separate matters.
+The selected paper candidate is **v0.6.1**. Its 19-page XeLaTeX PDF passed an internal *layout* review, with a minor nonblocking page-break imperfection; independent proof checking, historical novelty verification, data/code reproducibility and third-party/software rights and independently certified proof remain separate matters. The author approved the exact PDF for public GitHub release.
 
-The PDF is **not yet in this public repository**. The corresponding Zenodo DOI is **not assigned**. No public supplemental data package exists. In particular, manuscript identifiers `[S0]` through `[S20]` are *private evidence-role identifiers*, not public links.
+The author-approved [v0.6.1 manuscript PDF](paper/knowledge_recoverability_v0.6.1.pdf) has been publicly released in this repository; its SHA-256 is `053b228058438412c36f9e51022cabd7f7f41652afe57b726feca04a49394d06`. The corresponding Zenodo DOI is **not assigned**. No public supplemental data package exists. In particular, manuscript identifiers `[S0]` through `[S20]` are *private evidence-role identifiers*, not public links.
 
 ## Before publishing any additional artifact
 
