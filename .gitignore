@@ -1,0 +1,19 @@
+# Keep private research and generated drafts out of this curated release repo.
+*.log
+.env
+.env.*
+!*.env.example
+__pycache__/
+.pytest_cache/
+.ipynb_checkpoints/
+.DS_Store
+Thumbs.db
+*_PRINT_PREVIEW*.pdf
+*_PREDEPOSIT*.pdf
+*_DRAFT*.md
+/reports/
+/artifacts/
+/planning/
+/private/
+/research-private/
+/scratch/
