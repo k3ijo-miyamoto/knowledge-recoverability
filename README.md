@@ -36,6 +36,24 @@ This public repository is **not a mirror** of the private research workspace. Pr
 
 **PDF SHA-256:** `053b228058438412c36f9e51022cabd7f7f41652afe57b726feca04a49394d06`. No Zenodo DOI has been assigned.
 
+## Post-manuscript availability note (21 October 2026)
+
+The frozen v0.6.1 manuscript's Appendix B describes internal evidence identifiers
+`[S0]`–`[S20]` and their original private source-of-record status. **Since the
+manuscript was finalized**, a curated subset of synthetic X0-A, X0-B, and Audit
+Allocation code, fixtures, and bounded recorded results has been released in
+this repository (commit [`81b4b79`](https://github.com/k3ijo-miyamoto/knowledge-recoverability/commit/81b4b79ddb8ee8dc09591ca328116ce2d2324705)).
+The editable [Markdown](paper/knowledge_recoverability_v0.6.1.md) and
+[LaTeX](paper/knowledge_recoverability_v0.6.1.tex) manuscript sources were
+published later (commit [`1bf4cdd`](https://github.com/k3ijo-miyamoto/knowledge-recoverability/commit/1bf4cdd3f95978cc7359b041055cc3658c1d0498)).
+
+These additions **do not** make the private `[S0]`–`[S20]` research records,
+historical run receipts or handovers public, and they do not demonstrate an
+independently reproduced test suite or mathematical proof certification.
+C1/P2 diagnostic implementations and runtime receipts are not released at
+this date. The manuscript itself remains frozen at v0.6.1 rather than being
+silently retroactively revised.
+
 ## Citation and licensing
 
 Citation metadata are in [CITATION.cff](CITATION.cff); a DOI will be supplied only after a real public deposit. The original author-owned manuscript text and equations have the author's **CC BY 4.0** licensing approval; see [LICENSE.md](LICENSE.md) for scope. This does not grant rights to third-party content, independent software, or private repository material.
