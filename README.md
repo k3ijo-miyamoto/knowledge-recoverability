@@ -25,7 +25,7 @@ Here `u` and `v` are witness-validity marginals and `j` is their joint success p
 | Material | Current public status |
 | --- | --- |
 | Manuscript v0.6.1 | **Released** — [v0.6.1 manuscript PDF](paper/knowledge_recoverability_v0.6.1.pdf) (19 pages, CC BY 4.0) |
-| Zenodo DOI | **Not assigned** |
+| Zenodo preprint v0.6.1 | **Published** — [10.5281/zenodo.23504816](https://doi.org/10.5281/zenodo.23504816) (PDF, Markdown and LaTeX; CC BY 4.0) |
 | X0-A/X0-B/Audit Allocation code and selected evidence | **Released** — see [REPRODUCIBILITY.md](REPRODUCIBILITY.md) |
 | C1/P2 selected code and compact results | **Released** — see [REPRODUCIBILITY.md](REPRODUCIBILITY.md) |
 | C1/P2 raw receipts, full source snapshots and other historical records | **Not publicly released** |
@@ -35,7 +35,7 @@ The manuscript documents the core mathematics and a set of bounded synthetic and
 
 This public repository is **not a mirror** of the private research workspace. Private research discussions, historical Git commits, internal reports, and unreviewed artifacts are intentionally excluded. Source labels such as `[S0]–[S20]` describe private evidence roles and must not be interpreted as public download links.
 
-**PDF SHA-256:** `053b228058438412c36f9e51022cabd7f7f41652afe57b726feca04a49394d06`. No Zenodo DOI has been assigned.
+**PDF SHA-256:** `053b228058438412c36f9e51022cabd7f7f41652afe57b726feca04a49394d06`. Zenodo DOI: [10.5281/zenodo.23504816](https://doi.org/10.5281/zenodo.23504816); deposited files: the versioned PDF, Markdown and LaTeX manuscript sources (not the MIT-licensed research code).
 
 ## Post-manuscript availability note (21 October 2026)
 
@@ -56,7 +56,7 @@ silently retroactively revised.
 
 ## Citation and licensing
 
-Citation metadata are in [CITATION.cff](CITATION.cff); a DOI will be supplied only after a real public deposit. The original author-owned manuscript text and equations have the author's **CC BY 4.0** licensing approval; see [LICENSE.md](LICENSE.md) for scope. This does not grant rights to third-party content, independent software, or private repository material.
+The published preprint is citable as Miyamoto (2026), *Recoverability after Knowledge Invalidation: Contingent Safety Budgets and the Limits of Observable Evidence*, version 0.6.1, Zenodo, DOI [10.5281/zenodo.23504816](https://doi.org/10.5281/zenodo.23504816). Paper citation metadata are in [CITATION.cff](CITATION.cff). The original author-owned manuscript text and equations have the author's **CC BY 4.0** licensing approval; see [LICENSE.md](LICENSE.md) for scope. This does not grant rights to third-party content, independent software, or private repository material.
 
 AI tools assisted parts of literature comparison, mathematical derivation and checking, research instrumentation, and manuscript drafting. The author directs the study and remains responsible for its claims. Independent scholarly review and the historical theorem-priority assessment remain open.
 

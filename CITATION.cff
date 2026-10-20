@@ -1,11 +1,12 @@
 cff-version: 1.2.0
-message: "Please cite the manuscript. A DOI will be added after an authorized public deposit."
+message: "Please cite the published Zenodo preprint. This citation metadata describes the manuscript, not the separately MIT-licensed research code."
 title: "Recoverability after Knowledge Invalidation: Contingent Safety Budgets and the Limits of Observable Evidence"
 authors:
   - family-names: Miyamoto
     given-names: Yukitake
     affiliation: "Independent Researcher, Japan"
 version: "0.6.1"
+doi: 10.5281/zenodo.23504816
 url: "https://github.com/k3ijo-miyamoto/knowledge-recoverability/blob/main/paper/knowledge_recoverability_v0.6.1.pdf"
 license: CC-BY-4.0
 abstract: >-

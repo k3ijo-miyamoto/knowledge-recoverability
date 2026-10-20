@@ -19,7 +19,7 @@ This repository is a **curated publication surface** for the working preprint by
 
 The selected paper candidate is **v0.6.1**. Its 19-page XeLaTeX PDF passed an internal *layout* review, with a minor nonblocking page-break imperfection; independent proof checking, historical novelty verification, data/code reproducibility and third-party/software rights and independently certified proof remain separate matters. The author approved the exact PDF for public GitHub release.
 
-The author-approved [v0.6.1 manuscript PDF](paper/knowledge_recoverability_v0.6.1.pdf) has been publicly released in this repository; its SHA-256 is `053b228058438412c36f9e51022cabd7f7f41652afe57b726feca04a49394d06`. The corresponding Zenodo DOI is **not assigned**. A curated synthetic code, fixture, and compact-results subset is included, subject to the reproducibility limits in REPRODUCIBILITY.md. Other research evidence remains private. In particular, manuscript identifiers `[S0]` through `[S20]` are *private evidence-role identifiers*, not public links.
+The author-approved [v0.6.1 manuscript PDF](paper/knowledge_recoverability_v0.6.1.pdf) has been publicly released in this repository; its SHA-256 is `053b228058438412c36f9e51022cabd7f7f41652afe57b726feca04a49394d06`. The manuscript v0.6.1 was published on Zenodo under DOI **[10.5281/zenodo.23504816](https://doi.org/10.5281/zenodo.23504816)**, with the author's PDF, Markdown and LaTeX only, under CC BY 4.0. The release and DOI are evidenced by the author's Zenodo published-record screenshot; the newly released record has not yet been independently fetched through a public API. A curated synthetic code, fixture, and compact-results subset is included, subject to the reproducibility limits in REPRODUCIBILITY.md. Other research evidence remains private. In particular, manuscript identifiers `[S0]` through `[S20]` are *private evidence-role identifiers*, not public links.
 
 ## Curated C1/P2 release — 21 October 2026
 
@@ -39,6 +39,6 @@ See REPRODUCIBILITY.md for the bounded scientific interpretation.
 2. Confirm the specific bytes with SHA-256, current byline, version, preprint status, CC BY 4.0 scope, citations and complete rendered math.
 3. Make a fresh public-only commit, **not a repository mirror**, and inspect exactly the staged paths before pushing.
 4. Once actually released, update `README.md`, `CITATION.cff`, and this status to include only authentic persistent links and identifiers.
-5. Register at Zenodo only following a separate explicit submission authorization. Do not invent or preannounce a DOI.
+5. Any future Zenodo version or separate software/data deposit requires its own release review and authorization. The manuscript's published v0.6.1 DOI is [10.5281/zenodo.23504816](https://doi.org/10.5281/zenodo.23504816); do not invent identifiers for other records.
 
 The absence of open evidence does not weaken the obligation to communicate limitations; it means the PDF alone is not a complete end-to-end replication package.
