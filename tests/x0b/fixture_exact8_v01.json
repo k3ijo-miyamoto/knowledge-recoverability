@@ -1,0 +1,1166 @@
+{
+  "atoms": [
+    {
+      "C": 0,
+      "H": 0,
+      "V": "PASS",
+      "mass": "3/80"
+    },
+    {
+      "C": 0,
+      "H": 0,
+      "V": "FAIL",
+      "mass": "12/80"
+    },
+    {
+      "C": 1,
+      "H": 0,
+      "V": "PASS",
+      "mass": "36/80"
+    },
+    {
+      "C": 1,
+      "H": 0,
+      "V": "FAIL",
+      "mass": "9/80"
+    },
+    {
+      "C": 0,
+      "H": 1,
+      "V": "PASS",
+      "mass": "1/80"
+    },
+    {
+      "C": 0,
+      "H": 1,
+      "V": "FAIL",
+      "mass": "4/80"
+    },
+    {
+      "C": 1,
+      "H": 1,
+      "V": "PASS",
+      "mass": "12/80"
+    },
+    {
+      "C": 1,
+      "H": 1,
+      "V": "FAIL",
+      "mass": "3/80"
+    }
+  ],
+  "boundaries": [
+    {
+      "name": "h_zero",
+      "overrides": {
+        "h": "0"
+      },
+      "summary": {
+        "pi_0": {
+          "expected_W": "0",
+          "global_unsafe": "0",
+          "pub_new": "0",
+          "retained_valid_old": "1"
+        },
+        "pi_Q": {
+          "expected_W": "3/5",
+          "global_unsafe": "1/20",
+          "pub_new": "13/20",
+          "retained_valid_old": "0"
+        },
+        "pi_R": {
+          "expected_W": "3/5",
+          "global_unsafe": "1/20",
+          "pub_new": "13/20",
+          "retained_valid_old": "7/20"
+        }
+      }
+    },
+    {
+      "name": "noninformative",
+      "overrides": {
+        "f": "1/2",
+        "t": "1/2"
+      },
+      "summary": {
+        "pi_0": {
+          "expected_W": "0",
+          "global_unsafe": "1/4",
+          "pub_new": "0",
+          "retained_valid_old": "3/4"
+        },
+        "pi_Q": {
+          "expected_W": "3/8",
+          "global_unsafe": "1/8",
+          "pub_new": "1/2",
+          "retained_valid_old": "0"
+        },
+        "pi_R": {
+          "expected_W": "3/8",
+          "global_unsafe": "1/4",
+          "pub_new": "1/2",
+          "retained_valid_old": "3/8"
+        }
+      }
+    },
+    {
+      "name": "no_false_pass",
+      "overrides": {
+        "f": "0"
+      },
+      "summary": {
+        "pi_0": {
+          "expected_W": "0",
+          "global_unsafe": "1/4",
+          "pub_new": "0",
+          "retained_valid_old": "3/4"
+        },
+        "pi_Q": {
+          "expected_W": "3/5",
+          "global_unsafe": "0",
+          "pub_new": "3/5",
+          "retained_valid_old": "0"
+        },
+        "pi_R": {
+          "expected_W": "3/5",
+          "global_unsafe": "1/10",
+          "pub_new": "3/5",
+          "retained_valid_old": "3/10"
+        }
+      }
+    },
+    {
+      "name": "all_pass",
+      "overrides": {
+        "f": "1",
+        "t": "1"
+      },
+      "summary": {
+        "pi_0": {
+          "expected_W": "0",
+          "global_unsafe": "1/4",
+          "pub_new": "0",
+          "retained_valid_old": "3/4"
+        },
+        "pi_Q": {
+          "expected_W": "3/4",
+          "global_unsafe": "1/4",
+          "pub_new": "1",
+          "retained_valid_old": "0"
+        },
+        "pi_R": {
+          "expected_W": "3/4",
+          "global_unsafe": "1/4",
+          "pub_new": "1",
+          "retained_valid_old": "0"
+        }
+      }
+    },
+    {
+      "name": "no_pass",
+      "overrides": {
+        "f": "0",
+        "t": "0"
+      },
+      "summary": {
+        "pi_0": {
+          "expected_W": "0",
+          "global_unsafe": "1/4",
+          "pub_new": "0",
+          "retained_valid_old": "3/4"
+        },
+        "pi_Q": {
+          "expected_W": "0",
+          "global_unsafe": "0",
+          "pub_new": "0",
+          "retained_valid_old": "0"
+        },
+        "pi_R": {
+          "expected_W": "0",
+          "global_unsafe": "1/4",
+          "pub_new": "0",
+          "retained_valid_old": "3/4"
+        }
+      }
+    }
+  ],
+  "conditional": {
+    "correct_given_pass": "12/13",
+    "fail_mass": "7/20",
+    "incorrect_given_pass": "1/13",
+    "pass_mass": "13/20",
+    "pi_0_publication_risk": null,
+    "pi_Q_fail_risk": "0",
+    "pi_Q_pass_risk": "1/13",
+    "pi_R_fail_risk": "1/4",
+    "pi_R_pass_risk": "1/13"
+  },
+  "expected24": [
+    {
+      "atom": 0,
+      "counters": {
+        "barrier": 1,
+        "optional_steps": 0,
+        "paid_query": 0,
+        "quarantine": 0,
+        "repair": 0,
+        "replacement": 0
+      },
+      "ops": [
+        "B0",
+        "terminate"
+      ],
+      "rule": "pi_0",
+      "scores": {
+        "GlobalUnsafe": 0,
+        "NewUnsafe": 0,
+        "OldOtherUnsafe": 0,
+        "PubNew": 0,
+        "StaleServed": 0,
+        "W": 0,
+        "retained_valid_old_count": 1
+      },
+      "terminal": {
+        "B": [
+          "b-",
+          "r-"
+        ],
+        "M": [
+          "a-"
+        ],
+        "P": [],
+        "Q": []
+      }
+    },
+    {
+      "atom": 0,
+      "counters": {
+        "barrier": 1,
+        "optional_steps": 2,
+        "paid_query": 1,
+        "quarantine": 0,
+        "repair": 1,
+        "replacement": 1
+      },
+      "ops": [
+        "B0",
+        "repair",
+        "validate",
+        "terminate"
+      ],
+      "rule": "pi_R",
+      "scores": {
+        "GlobalUnsafe": 1,
+        "NewUnsafe": 1,
+        "OldOtherUnsafe": 0,
+        "PubNew": 1,
+        "StaleServed": 0,
+        "W": 0,
+        "retained_valid_old_count": 0
+      },
+      "terminal": {
+        "B": [
+          "a-",
+          "b-",
+          "r-"
+        ],
+        "M": [
+          "a+"
+        ],
+        "P": [
+          "a+"
+        ],
+        "Q": []
+      }
+    },
+    {
+      "atom": 0,
+      "counters": {
+        "barrier": 1,
+        "optional_steps": 3,
+        "paid_query": 1,
+        "quarantine": 1,
+        "repair": 1,
+        "replacement": 0
+      },
+      "ops": [
+        "B0",
+        "quarantine",
+        "repair",
+        "validate",
+        "terminate"
+      ],
+      "rule": "pi_Q",
+      "scores": {
+        "GlobalUnsafe": 1,
+        "NewUnsafe": 1,
+        "OldOtherUnsafe": 0,
+        "PubNew": 1,
+        "StaleServed": 0,
+        "W": 0,
+        "retained_valid_old_count": 0
+      },
+      "terminal": {
+        "B": [
+          "a-",
+          "b-",
+          "r-"
+        ],
+        "M": [
+          "a+"
+        ],
+        "P": [
+          "a+"
+        ],
+        "Q": []
+      }
+    },
+    {
+      "atom": 1,
+      "counters": {
+        "barrier": 1,
+        "optional_steps": 0,
+        "paid_query": 0,
+        "quarantine": 0,
+        "repair": 0,
+        "replacement": 0
+      },
+      "ops": [
+        "B0",
+        "terminate"
+      ],
+      "rule": "pi_0",
+      "scores": {
+        "GlobalUnsafe": 0,
+        "NewUnsafe": 0,
+        "OldOtherUnsafe": 0,
+        "PubNew": 0,
+        "StaleServed": 0,
+        "W": 0,
+        "retained_valid_old_count": 1
+      },
+      "terminal": {
+        "B": [
+          "b-",
+          "r-"
+        ],
+        "M": [
+          "a-"
+        ],
+        "P": [],
+        "Q": []
+      }
+    },
+    {
+      "atom": 1,
+      "counters": {
+        "barrier": 1,
+        "optional_steps": 2,
+        "paid_query": 1,
+        "quarantine": 0,
+        "repair": 1,
+        "replacement": 0
+      },
+      "ops": [
+        "B0",
+        "repair",
+        "validate",
+        "terminate"
+      ],
+      "rule": "pi_R",
+      "scores": {
+        "GlobalUnsafe": 0,
+        "NewUnsafe": 0,
+        "OldOtherUnsafe": 0,
+        "PubNew": 0,
+        "StaleServed": 0,
+        "W": 0,
+        "retained_valid_old_count": 1
+      },
+      "terminal": {
+        "B": [
+          "b-",
+          "r-"
+        ],
+        "M": [
+          "a-"
+        ],
+        "P": [],
+        "Q": [
+          "a+"
+        ]
+      }
+    },
+    {
+      "atom": 1,
+      "counters": {
+        "barrier": 1,
+        "optional_steps": 3,
+        "paid_query": 1,
+        "quarantine": 1,
+        "repair": 1,
+        "replacement": 0
+      },
+      "ops": [
+        "B0",
+        "quarantine",
+        "repair",
+        "validate",
+        "terminate"
+      ],
+      "rule": "pi_Q",
+      "scores": {
+        "GlobalUnsafe": 0,
+        "NewUnsafe": 0,
+        "OldOtherUnsafe": 0,
+        "PubNew": 0,
+        "StaleServed": 0,
+        "W": 0,
+        "retained_valid_old_count": 0
+      },
+      "terminal": {
+        "B": [
+          "a-",
+          "b-",
+          "r-"
+        ],
+        "M": [],
+        "P": [],
+        "Q": [
+          "a+"
+        ]
+      }
+    },
+    {
+      "atom": 2,
+      "counters": {
+        "barrier": 1,
+        "optional_steps": 0,
+        "paid_query": 0,
+        "quarantine": 0,
+        "repair": 0,
+        "replacement": 0
+      },
+      "ops": [
+        "B0",
+        "terminate"
+      ],
+      "rule": "pi_0",
+      "scores": {
+        "GlobalUnsafe": 0,
+        "NewUnsafe": 0,
+        "OldOtherUnsafe": 0,
+        "PubNew": 0,
+        "StaleServed": 0,
+        "W": 0,
+        "retained_valid_old_count": 1
+      },
+      "terminal": {
+        "B": [
+          "b-",
+          "r-"
+        ],
+        "M": [
+          "a-"
+        ],
+        "P": [],
+        "Q": []
+      }
+    },
+    {
+      "atom": 2,
+      "counters": {
+        "barrier": 1,
+        "optional_steps": 2,
+        "paid_query": 1,
+        "quarantine": 0,
+        "repair": 1,
+        "replacement": 1
+      },
+      "ops": [
+        "B0",
+        "repair",
+        "validate",
+        "terminate"
+      ],
+      "rule": "pi_R",
+      "scores": {
+        "GlobalUnsafe": 0,
+        "NewUnsafe": 0,
+        "OldOtherUnsafe": 0,
+        "PubNew": 1,
+        "StaleServed": 0,
+        "W": 1,
+        "retained_valid_old_count": 0
+      },
+      "terminal": {
+        "B": [
+          "a-",
+          "b-",
+          "r-"
+        ],
+        "M": [
+          "a+"
+        ],
+        "P": [
+          "a+"
+        ],
+        "Q": []
+      }
+    },
+    {
+      "atom": 2,
+      "counters": {
+        "barrier": 1,
+        "optional_steps": 3,
+        "paid_query": 1,
+        "quarantine": 1,
+        "repair": 1,
+        "replacement": 0
+      },
+      "ops": [
+        "B0",
+        "quarantine",
+        "repair",
+        "validate",
+        "terminate"
+      ],
+      "rule": "pi_Q",
+      "scores": {
+        "GlobalUnsafe": 0,
+        "NewUnsafe": 0,
+        "OldOtherUnsafe": 0,
+        "PubNew": 1,
+        "StaleServed": 0,
+        "W": 1,
+        "retained_valid_old_count": 0
+      },
+      "terminal": {
+        "B": [
+          "a-",
+          "b-",
+          "r-"
+        ],
+        "M": [
+          "a+"
+        ],
+        "P": [
+          "a+"
+        ],
+        "Q": []
+      }
+    },
+    {
+      "atom": 3,
+      "counters": {
+        "barrier": 1,
+        "optional_steps": 0,
+        "paid_query": 0,
+        "quarantine": 0,
+        "repair": 0,
+        "replacement": 0
+      },
+      "ops": [
+        "B0",
+        "terminate"
+      ],
+      "rule": "pi_0",
+      "scores": {
+        "GlobalUnsafe": 0,
+        "NewUnsafe": 0,
+        "OldOtherUnsafe": 0,
+        "PubNew": 0,
+        "StaleServed": 0,
+        "W": 0,
+        "retained_valid_old_count": 1
+      },
+      "terminal": {
+        "B": [
+          "b-",
+          "r-"
+        ],
+        "M": [
+          "a-"
+        ],
+        "P": [],
+        "Q": []
+      }
+    },
+    {
+      "atom": 3,
+      "counters": {
+        "barrier": 1,
+        "optional_steps": 2,
+        "paid_query": 1,
+        "quarantine": 0,
+        "repair": 1,
+        "replacement": 0
+      },
+      "ops": [
+        "B0",
+        "repair",
+        "validate",
+        "terminate"
+      ],
+      "rule": "pi_R",
+      "scores": {
+        "GlobalUnsafe": 0,
+        "NewUnsafe": 0,
+        "OldOtherUnsafe": 0,
+        "PubNew": 0,
+        "StaleServed": 0,
+        "W": 0,
+        "retained_valid_old_count": 1
+      },
+      "terminal": {
+        "B": [
+          "b-",
+          "r-"
+        ],
+        "M": [
+          "a-"
+        ],
+        "P": [],
+        "Q": [
+          "a+"
+        ]
+      }
+    },
+    {
+      "atom": 3,
+      "counters": {
+        "barrier": 1,
+        "optional_steps": 3,
+        "paid_query": 1,
+        "quarantine": 1,
+        "repair": 1,
+        "replacement": 0
+      },
+      "ops": [
+        "B0",
+        "quarantine",
+        "repair",
+        "validate",
+        "terminate"
+      ],
+      "rule": "pi_Q",
+      "scores": {
+        "GlobalUnsafe": 0,
+        "NewUnsafe": 0,
+        "OldOtherUnsafe": 0,
+        "PubNew": 0,
+        "StaleServed": 0,
+        "W": 0,
+        "retained_valid_old_count": 0
+      },
+      "terminal": {
+        "B": [
+          "a-",
+          "b-",
+          "r-"
+        ],
+        "M": [],
+        "P": [],
+        "Q": [
+          "a+"
+        ]
+      }
+    },
+    {
+      "atom": 4,
+      "counters": {
+        "barrier": 1,
+        "optional_steps": 0,
+        "paid_query": 0,
+        "quarantine": 0,
+        "repair": 0,
+        "replacement": 0
+      },
+      "ops": [
+        "B0",
+        "terminate"
+      ],
+      "rule": "pi_0",
+      "scores": {
+        "GlobalUnsafe": 1,
+        "NewUnsafe": 0,
+        "OldOtherUnsafe": 0,
+        "PubNew": 0,
+        "StaleServed": 1,
+        "W": 0,
+        "retained_valid_old_count": 0
+      },
+      "terminal": {
+        "B": [
+          "b-",
+          "r-"
+        ],
+        "M": [
+          "a-"
+        ],
+        "P": [],
+        "Q": []
+      }
+    },
+    {
+      "atom": 4,
+      "counters": {
+        "barrier": 1,
+        "optional_steps": 2,
+        "paid_query": 1,
+        "quarantine": 0,
+        "repair": 1,
+        "replacement": 1
+      },
+      "ops": [
+        "B0",
+        "repair",
+        "validate",
+        "terminate"
+      ],
+      "rule": "pi_R",
+      "scores": {
+        "GlobalUnsafe": 1,
+        "NewUnsafe": 1,
+        "OldOtherUnsafe": 0,
+        "PubNew": 1,
+        "StaleServed": 0,
+        "W": 0,
+        "retained_valid_old_count": 0
+      },
+      "terminal": {
+        "B": [
+          "a-",
+          "b-",
+          "r-"
+        ],
+        "M": [
+          "a+"
+        ],
+        "P": [
+          "a+"
+        ],
+        "Q": []
+      }
+    },
+    {
+      "atom": 4,
+      "counters": {
+        "barrier": 1,
+        "optional_steps": 3,
+        "paid_query": 1,
+        "quarantine": 1,
+        "repair": 1,
+        "replacement": 0
+      },
+      "ops": [
+        "B0",
+        "quarantine",
+        "repair",
+        "validate",
+        "terminate"
+      ],
+      "rule": "pi_Q",
+      "scores": {
+        "GlobalUnsafe": 1,
+        "NewUnsafe": 1,
+        "OldOtherUnsafe": 0,
+        "PubNew": 1,
+        "StaleServed": 0,
+        "W": 0,
+        "retained_valid_old_count": 0
+      },
+      "terminal": {
+        "B": [
+          "a-",
+          "b-",
+          "r-"
+        ],
+        "M": [
+          "a+"
+        ],
+        "P": [
+          "a+"
+        ],
+        "Q": []
+      }
+    },
+    {
+      "atom": 5,
+      "counters": {
+        "barrier": 1,
+        "optional_steps": 0,
+        "paid_query": 0,
+        "quarantine": 0,
+        "repair": 0,
+        "replacement": 0
+      },
+      "ops": [
+        "B0",
+        "terminate"
+      ],
+      "rule": "pi_0",
+      "scores": {
+        "GlobalUnsafe": 1,
+        "NewUnsafe": 0,
+        "OldOtherUnsafe": 0,
+        "PubNew": 0,
+        "StaleServed": 1,
+        "W": 0,
+        "retained_valid_old_count": 0
+      },
+      "terminal": {
+        "B": [
+          "b-",
+          "r-"
+        ],
+        "M": [
+          "a-"
+        ],
+        "P": [],
+        "Q": []
+      }
+    },
+    {
+      "atom": 5,
+      "counters": {
+        "barrier": 1,
+        "optional_steps": 2,
+        "paid_query": 1,
+        "quarantine": 0,
+        "repair": 1,
+        "replacement": 0
+      },
+      "ops": [
+        "B0",
+        "repair",
+        "validate",
+        "terminate"
+      ],
+      "rule": "pi_R",
+      "scores": {
+        "GlobalUnsafe": 1,
+        "NewUnsafe": 0,
+        "OldOtherUnsafe": 0,
+        "PubNew": 0,
+        "StaleServed": 1,
+        "W": 0,
+        "retained_valid_old_count": 0
+      },
+      "terminal": {
+        "B": [
+          "b-",
+          "r-"
+        ],
+        "M": [
+          "a-"
+        ],
+        "P": [],
+        "Q": [
+          "a+"
+        ]
+      }
+    },
+    {
+      "atom": 5,
+      "counters": {
+        "barrier": 1,
+        "optional_steps": 3,
+        "paid_query": 1,
+        "quarantine": 1,
+        "repair": 1,
+        "replacement": 0
+      },
+      "ops": [
+        "B0",
+        "quarantine",
+        "repair",
+        "validate",
+        "terminate"
+      ],
+      "rule": "pi_Q",
+      "scores": {
+        "GlobalUnsafe": 0,
+        "NewUnsafe": 0,
+        "OldOtherUnsafe": 0,
+        "PubNew": 0,
+        "StaleServed": 0,
+        "W": 0,
+        "retained_valid_old_count": 0
+      },
+      "terminal": {
+        "B": [
+          "a-",
+          "b-",
+          "r-"
+        ],
+        "M": [],
+        "P": [],
+        "Q": [
+          "a+"
+        ]
+      }
+    },
+    {
+      "atom": 6,
+      "counters": {
+        "barrier": 1,
+        "optional_steps": 0,
+        "paid_query": 0,
+        "quarantine": 0,
+        "repair": 0,
+        "replacement": 0
+      },
+      "ops": [
+        "B0",
+        "terminate"
+      ],
+      "rule": "pi_0",
+      "scores": {
+        "GlobalUnsafe": 1,
+        "NewUnsafe": 0,
+        "OldOtherUnsafe": 0,
+        "PubNew": 0,
+        "StaleServed": 1,
+        "W": 0,
+        "retained_valid_old_count": 0
+      },
+      "terminal": {
+        "B": [
+          "b-",
+          "r-"
+        ],
+        "M": [
+          "a-"
+        ],
+        "P": [],
+        "Q": []
+      }
+    },
+    {
+      "atom": 6,
+      "counters": {
+        "barrier": 1,
+        "optional_steps": 2,
+        "paid_query": 1,
+        "quarantine": 0,
+        "repair": 1,
+        "replacement": 1
+      },
+      "ops": [
+        "B0",
+        "repair",
+        "validate",
+        "terminate"
+      ],
+      "rule": "pi_R",
+      "scores": {
+        "GlobalUnsafe": 0,
+        "NewUnsafe": 0,
+        "OldOtherUnsafe": 0,
+        "PubNew": 1,
+        "StaleServed": 0,
+        "W": 1,
+        "retained_valid_old_count": 0
+      },
+      "terminal": {
+        "B": [
+          "a-",
+          "b-",
+          "r-"
+        ],
+        "M": [
+          "a+"
+        ],
+        "P": [
+          "a+"
+        ],
+        "Q": []
+      }
+    },
+    {
+      "atom": 6,
+      "counters": {
+        "barrier": 1,
+        "optional_steps": 3,
+        "paid_query": 1,
+        "quarantine": 1,
+        "repair": 1,
+        "replacement": 0
+      },
+      "ops": [
+        "B0",
+        "quarantine",
+        "repair",
+        "validate",
+        "terminate"
+      ],
+      "rule": "pi_Q",
+      "scores": {
+        "GlobalUnsafe": 0,
+        "NewUnsafe": 0,
+        "OldOtherUnsafe": 0,
+        "PubNew": 1,
+        "StaleServed": 0,
+        "W": 1,
+        "retained_valid_old_count": 0
+      },
+      "terminal": {
+        "B": [
+          "a-",
+          "b-",
+          "r-"
+        ],
+        "M": [
+          "a+"
+        ],
+        "P": [
+          "a+"
+        ],
+        "Q": []
+      }
+    },
+    {
+      "atom": 7,
+      "counters": {
+        "barrier": 1,
+        "optional_steps": 0,
+        "paid_query": 0,
+        "quarantine": 0,
+        "repair": 0,
+        "replacement": 0
+      },
+      "ops": [
+        "B0",
+        "terminate"
+      ],
+      "rule": "pi_0",
+      "scores": {
+        "GlobalUnsafe": 1,
+        "NewUnsafe": 0,
+        "OldOtherUnsafe": 0,
+        "PubNew": 0,
+        "StaleServed": 1,
+        "W": 0,
+        "retained_valid_old_count": 0
+      },
+      "terminal": {
+        "B": [
+          "b-",
+          "r-"
+        ],
+        "M": [
+          "a-"
+        ],
+        "P": [],
+        "Q": []
+      }
+    },
+    {
+      "atom": 7,
+      "counters": {
+        "barrier": 1,
+        "optional_steps": 2,
+        "paid_query": 1,
+        "quarantine": 0,
+        "repair": 1,
+        "replacement": 0
+      },
+      "ops": [
+        "B0",
+        "repair",
+        "validate",
+        "terminate"
+      ],
+      "rule": "pi_R",
+      "scores": {
+        "GlobalUnsafe": 1,
+        "NewUnsafe": 0,
+        "OldOtherUnsafe": 0,
+        "PubNew": 0,
+        "StaleServed": 1,
+        "W": 0,
+        "retained_valid_old_count": 0
+      },
+      "terminal": {
+        "B": [
+          "b-",
+          "r-"
+        ],
+        "M": [
+          "a-"
+        ],
+        "P": [],
+        "Q": [
+          "a+"
+        ]
+      }
+    },
+    {
+      "atom": 7,
+      "counters": {
+        "barrier": 1,
+        "optional_steps": 3,
+        "paid_query": 1,
+        "quarantine": 1,
+        "repair": 1,
+        "replacement": 0
+      },
+      "ops": [
+        "B0",
+        "quarantine",
+        "repair",
+        "validate",
+        "terminate"
+      ],
+      "rule": "pi_Q",
+      "scores": {
+        "GlobalUnsafe": 0,
+        "NewUnsafe": 0,
+        "OldOtherUnsafe": 0,
+        "PubNew": 0,
+        "StaleServed": 0,
+        "W": 0,
+        "retained_valid_old_count": 0
+      },
+      "terminal": {
+        "B": [
+          "a-",
+          "b-",
+          "r-"
+        ],
+        "M": [],
+        "P": [],
+        "Q": [
+          "a+"
+        ]
+      }
+    }
+  ],
+  "expected_summary": {
+    "pi_0": {
+      "expected_W": "0",
+      "global_unsafe": "1/4",
+      "pub_new": "0",
+      "retained_valid_old": "3/4"
+    },
+    "pi_Q": {
+      "expected_W": "3/5",
+      "global_unsafe": "1/20",
+      "pub_new": "13/20",
+      "retained_valid_old": "0"
+    },
+    "pi_R": {
+      "expected_W": "3/5",
+      "global_unsafe": "11/80",
+      "pub_new": "13/20",
+      "retained_valid_old": "21/80"
+    }
+  },
+  "params": {
+    "c": "3/4",
+    "f": "1/5",
+    "h": "1/4",
+    "t": "4/5"
+  }
+}

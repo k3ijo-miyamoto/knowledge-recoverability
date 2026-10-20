@@ -1,0 +1,250 @@
+{
+  "L": {
+    "P_E": {
+      "totals": {
+        "W": "459/800",
+        "GlobalUnsafe": "101/800",
+        "StaleServed": "0",
+        "NewUnsafe": "101/800",
+        "PubNew": "7/10",
+        "W1Valid": "3/4",
+        "RetainedValidOld": "0",
+        "K": "13/10",
+        "audits": "1",
+        "quarantines": "3/10",
+        "replacement_actions": "7/10",
+        "staging_repair_units": "1",
+        "publication_admin_units": "7/10"
+      },
+      "branches": {
+        "(('E', False, 1), ('Q', None, 1), ('STOP', None, 0))": {
+          "mass": "3/10",
+          "unsafe_mass": "0",
+          "conditional_unsafe": "0",
+          "admissible": true
+        },
+        "(('E', True, 1), ('PUB', None, 0))": {
+          "mass": "7/10",
+          "unsafe_mass": "101/800",
+          "conditional_unsafe": "101/560",
+          "admissible": true
+        }
+      },
+      "max_K": 2
+    },
+    "P_C": {
+      "totals": {
+        "W": "0",
+        "GlobalUnsafe": "0",
+        "StaleServed": "0",
+        "NewUnsafe": "0",
+        "PubNew": "0",
+        "W1Valid": "3/4",
+        "RetainedValidOld": "0",
+        "K": "2",
+        "audits": "1",
+        "quarantines": "1",
+        "replacement_actions": "0",
+        "staging_repair_units": "1",
+        "publication_admin_units": "0"
+      },
+      "branches": {
+        "(('C', False, 1), ('Q', None, 1), ('STOP', None, 0))": {
+          "mass": "11/50",
+          "unsafe_mass": "0",
+          "conditional_unsafe": "0",
+          "admissible": true
+        },
+        "(('C', True, 1), ('Q', None, 1), ('STOP', None, 0))": {
+          "mass": "39/50",
+          "unsafe_mass": "0",
+          "conditional_unsafe": "0",
+          "admissible": true
+        }
+      },
+      "max_K": 2
+    },
+    "P_Q": {
+      "totals": {
+        "W": "0",
+        "GlobalUnsafe": "0",
+        "StaleServed": "0",
+        "NewUnsafe": "0",
+        "PubNew": "0",
+        "W1Valid": "3/4",
+        "RetainedValidOld": "0",
+        "K": "1",
+        "audits": "0",
+        "quarantines": "1",
+        "replacement_actions": "0",
+        "staging_repair_units": "1",
+        "publication_admin_units": "0"
+      },
+      "branches": {
+        "(('Q', None, 1), ('STOP', None, 0))": {
+          "mass": "1",
+          "unsafe_mass": "0",
+          "conditional_unsafe": "0",
+          "admissible": true
+        }
+      },
+      "max_K": 1
+    },
+    "P_OPT": {
+      "totals": {
+        "W": "459/800",
+        "GlobalUnsafe": "101/800",
+        "StaleServed": "0",
+        "NewUnsafe": "101/800",
+        "PubNew": "7/10",
+        "W1Valid": "3/4",
+        "RetainedValidOld": "0",
+        "K": "13/10",
+        "audits": "1",
+        "quarantines": "3/10",
+        "replacement_actions": "7/10",
+        "staging_repair_units": "1",
+        "publication_admin_units": "7/10"
+      },
+      "branches": {
+        "(('E', False, 1), ('Q', None, 1), ('STOP', None, 0))": {
+          "mass": "3/10",
+          "unsafe_mass": "0",
+          "conditional_unsafe": "0",
+          "admissible": true
+        },
+        "(('E', True, 1), ('PUB', None, 0))": {
+          "mass": "7/10",
+          "unsafe_mass": "101/800",
+          "conditional_unsafe": "101/560",
+          "admissible": true
+        }
+      },
+      "max_K": 2
+    }
+  },
+  "R": {
+    "P_E": {
+      "totals": {
+        "W": "0",
+        "GlobalUnsafe": "0",
+        "StaleServed": "0",
+        "NewUnsafe": "0",
+        "PubNew": "0",
+        "W1Valid": "17/20",
+        "RetainedValidOld": "0",
+        "K": "2",
+        "audits": "1",
+        "quarantines": "1",
+        "replacement_actions": "0",
+        "staging_repair_units": "1",
+        "publication_admin_units": "0"
+      },
+      "branches": {
+        "(('E', False, 1), ('Q', None, 1), ('STOP', None, 0))": {
+          "mass": "11/50",
+          "unsafe_mass": "0",
+          "conditional_unsafe": "0",
+          "admissible": true
+        },
+        "(('E', True, 1), ('Q', None, 1), ('STOP', None, 0))": {
+          "mass": "39/50",
+          "unsafe_mass": "0",
+          "conditional_unsafe": "0",
+          "admissible": true
+        }
+      },
+      "max_K": 2
+    },
+    "P_C": {
+      "totals": {
+        "W": "459/800",
+        "GlobalUnsafe": "101/800",
+        "StaleServed": "0",
+        "NewUnsafe": "101/800",
+        "PubNew": "7/10",
+        "W1Valid": "17/20",
+        "RetainedValidOld": "0",
+        "K": "13/10",
+        "audits": "1",
+        "quarantines": "3/10",
+        "replacement_actions": "7/10",
+        "staging_repair_units": "1",
+        "publication_admin_units": "7/10"
+      },
+      "branches": {
+        "(('C', False, 1), ('Q', None, 1), ('STOP', None, 0))": {
+          "mass": "3/10",
+          "unsafe_mass": "0",
+          "conditional_unsafe": "0",
+          "admissible": true
+        },
+        "(('C', True, 1), ('PUB', None, 0))": {
+          "mass": "7/10",
+          "unsafe_mass": "101/800",
+          "conditional_unsafe": "101/560",
+          "admissible": true
+        }
+      },
+      "max_K": 2
+    },
+    "P_Q": {
+      "totals": {
+        "W": "0",
+        "GlobalUnsafe": "0",
+        "StaleServed": "0",
+        "NewUnsafe": "0",
+        "PubNew": "0",
+        "W1Valid": "17/20",
+        "RetainedValidOld": "0",
+        "K": "1",
+        "audits": "0",
+        "quarantines": "1",
+        "replacement_actions": "0",
+        "staging_repair_units": "1",
+        "publication_admin_units": "0"
+      },
+      "branches": {
+        "(('Q', None, 1), ('STOP', None, 0))": {
+          "mass": "1",
+          "unsafe_mass": "0",
+          "conditional_unsafe": "0",
+          "admissible": true
+        }
+      },
+      "max_K": 1
+    },
+    "P_OPT": {
+      "totals": {
+        "W": "459/800",
+        "GlobalUnsafe": "101/800",
+        "StaleServed": "0",
+        "NewUnsafe": "101/800",
+        "PubNew": "7/10",
+        "W1Valid": "17/20",
+        "RetainedValidOld": "0",
+        "K": "13/10",
+        "audits": "1",
+        "quarantines": "3/10",
+        "replacement_actions": "7/10",
+        "staging_repair_units": "1",
+        "publication_admin_units": "7/10"
+      },
+      "branches": {
+        "(('C', False, 1), ('Q', None, 1), ('STOP', None, 0))": {
+          "mass": "3/10",
+          "unsafe_mass": "0",
+          "conditional_unsafe": "0",
+          "admissible": true
+        },
+        "(('C', True, 1), ('PUB', None, 0))": {
+          "mass": "7/10",
+          "unsafe_mass": "101/800",
+          "conditional_unsafe": "101/560",
+          "admissible": true
+        }
+      },
+      "max_K": 2
+    }
+  }
+}

@@ -1,0 +1,5 @@
+{
+  "sha256": "7903e50033518325f9c025cbd46a9aa42f1fd52910cbde9c759213dc240ba8d2",
+  "provenance": "Hand-specified eight masses, 24 score/state/counter rows and exact aggregates before any suite launch. No engine, enumeration, scorer or analytic module used to generate answers.",
+  "boundaries": "Five labeled algebraic sanity assertions only: h=0, t=f=1/2, f=0, t=f=1 and t=f=0. Not additional research arms."
+}

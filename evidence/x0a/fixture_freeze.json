@@ -1,0 +1,11 @@
+{
+  "sha256": "dbe68e605177d521a98183a43ac5e5decc6cf64b5c2d6c06b7a869fbc835be5d",
+  "expectations": "Hand-authored from G22 before first suite invocation; no engine/scorer calls used.",
+  "engineering_stipulations": [
+    "Base old-other hazards explicitly false; old content except invalid root true.",
+    "A07 terminates with empty publication after quota actions; no safe-publication inference.",
+    "A09/A11/A12 use full logged fork barrier; A12 repairs a+ and retains c-.",
+    "A10 varies only sealed a+ content truth; both scripts and online projections identical.",
+    "A03 source is intrinsically valid and visibly eligible but its origin is root-derived."
+  ]
+}

@@ -26,7 +26,8 @@ Here `u` and `v` are witness-validity marginals and `j` is their joint success p
 | --- | --- |
 | Manuscript v0.6.1 | **Released** — [v0.6.1 manuscript PDF](paper/knowledge_recoverability_v0.6.1.pdf) (19 pages, CC BY 4.0) |
 | Zenodo DOI | **Not assigned** |
-| Research source code, fixed fixtures, run receipts and raw logs | **Not publicly released** |
+| X0-A/X0-B/Audit Allocation code and selected evidence | **Released** — see [REPRODUCIBILITY.md](REPRODUCIBILITY.md) |
+| C1/P2 and other historical receipts | **Not publicly released** |
 | Independent W1 semantic-verification service or production safety certificate | **Not established** |
 
 The manuscript documents the core mathematics and a set of bounded synthetic and software diagnostic controls. Control observations are not demonstrations of real-world all-route safety, and counts of deterministic rows are not independent empirical samples.

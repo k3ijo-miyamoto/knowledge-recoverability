@@ -1,0 +1,2703 @@
+{
+  "A01": {
+    "expected": {
+      "counters": {
+        "barrier_count": 1,
+        "optional_steps": 0,
+        "paid_query_count": 0,
+        "quarantine_count": 0,
+        "repair_count": 0,
+        "replacement_count": 0
+      },
+      "disposition": "TERMINATED",
+      "reject_reason": null,
+      "scores": {
+        "GlobalUnsafe": 1,
+        "NewUnsafe": 0,
+        "OldOtherUnsafe": 0,
+        "PubNew": 0,
+        "StaleServed": 1,
+        "W": 0,
+        "retained_valid_old_count": 0
+      },
+      "symbolic_costs": {
+        "barrier": "barrier_admin_cost",
+        "quarantine": "quarantine_admin_cost",
+        "replacement": "replacement_admin_cost"
+      },
+      "terminal": {
+        "B": [
+          "b-",
+          "r-"
+        ],
+        "M": [
+          "a-"
+        ],
+        "P": [],
+        "Q": []
+      }
+    },
+    "offline_truth": {
+      "authorized": {
+        "a+": true,
+        "a-": true,
+        "b+": true,
+        "b-": true,
+        "r-": true
+      },
+      "contaminated_origins": [
+        "root-origin"
+      ],
+      "content": {
+        "a+": true,
+        "a-": true,
+        "b+": true,
+        "b-": true,
+        "r-": false
+      },
+      "external_sources": [
+        "s+"
+      ],
+      "historical_edges": [
+        [
+          "r-",
+          "a-"
+        ],
+        [
+          "r-",
+          "b-"
+        ]
+      ],
+      "old_other_unsafe": {
+        "a-": false,
+        "b-": false,
+        "r-": false
+      },
+      "origin_edges": [],
+      "root": "r-",
+      "sources": {
+        "s+": {
+          "authorized": true,
+          "context_valid": true,
+          "origin": "independent-origin",
+          "role_allowed": true,
+          "scope_valid": true,
+          "supports": [
+            "a+",
+            "b+"
+          ],
+          "type": "evidence",
+          "valid": true
+        }
+      },
+      "support_edges": [
+        [
+          "s+",
+          "a+"
+        ],
+        [
+          "s+",
+          "b+"
+        ]
+      ],
+      "versions": {
+        "a+": {
+          "identity": "a",
+          "kind": "new"
+        },
+        "a-": {
+          "identity": "a",
+          "kind": "old"
+        },
+        "b+": {
+          "identity": "b",
+          "kind": "new"
+        },
+        "b-": {
+          "identity": "b",
+          "kind": "old"
+        },
+        "r-": {
+          "identity": "root",
+          "kind": "old"
+        }
+      }
+    },
+    "online_input": {
+      "access": {
+        "a+": true,
+        "a-": true,
+        "b+": true,
+        "b-": true,
+        "r-": true
+      },
+      "check_messages": {
+        "validate:a+": "PASS",
+        "validate:b+": "PASS"
+      },
+      "logged_edges": [
+        [
+          "r-",
+          "b-"
+        ]
+      ],
+      "repair_status": {
+        "a+": "SUCCESS",
+        "b+": "SUCCESS"
+      },
+      "root": "r-",
+      "sources": {
+        "s+": {
+          "citeable": true,
+          "type": "evidence"
+        }
+      },
+      "state": {
+        "B": [],
+        "M": [
+          "r-",
+          "a-",
+          "b-"
+        ],
+        "P": [],
+        "Q": []
+      },
+      "versions": {
+        "a+": {
+          "identity": "a",
+          "kind": "new"
+        },
+        "a-": {
+          "identity": "a",
+          "kind": "old"
+        },
+        "b+": {
+          "identity": "b",
+          "kind": "new"
+        },
+        "b-": {
+          "identity": "b",
+          "kind": "old"
+        },
+        "r-": {
+          "identity": "root",
+          "kind": "old"
+        }
+      }
+    },
+    "script": [
+      {
+        "op": "terminate",
+        "publications": []
+      }
+    ]
+  },
+  "A02": {
+    "expected": {
+      "counters": {
+        "barrier_count": 1,
+        "optional_steps": 2,
+        "paid_query_count": 0,
+        "quarantine_count": 1,
+        "repair_count": 1,
+        "replacement_count": 0
+      },
+      "disposition": "TERMINATED",
+      "reject_reason": null,
+      "scores": {
+        "GlobalUnsafe": 0,
+        "NewUnsafe": 0,
+        "OldOtherUnsafe": 0,
+        "PubNew": 1,
+        "StaleServed": 0,
+        "W": 1,
+        "retained_valid_old_count": 0
+      },
+      "symbolic_costs": {
+        "barrier": "barrier_admin_cost",
+        "quarantine": "quarantine_admin_cost",
+        "replacement": "replacement_admin_cost"
+      },
+      "terminal": {
+        "B": [
+          "a-",
+          "b-",
+          "r-"
+        ],
+        "M": [
+          "a+"
+        ],
+        "P": [
+          "a+"
+        ],
+        "Q": []
+      }
+    },
+    "offline_truth": {
+      "authorized": {
+        "a+": true,
+        "a-": true,
+        "b+": true,
+        "b-": true,
+        "r-": true
+      },
+      "contaminated_origins": [
+        "root-origin"
+      ],
+      "content": {
+        "a+": true,
+        "a-": true,
+        "b+": true,
+        "b-": true,
+        "r-": false
+      },
+      "external_sources": [
+        "s+"
+      ],
+      "historical_edges": [
+        [
+          "r-",
+          "a-"
+        ],
+        [
+          "r-",
+          "b-"
+        ]
+      ],
+      "old_other_unsafe": {
+        "a-": false,
+        "b-": false,
+        "r-": false
+      },
+      "origin_edges": [],
+      "root": "r-",
+      "sources": {
+        "s+": {
+          "authorized": true,
+          "context_valid": true,
+          "origin": "independent-origin",
+          "role_allowed": true,
+          "scope_valid": true,
+          "supports": [
+            "a+",
+            "b+"
+          ],
+          "type": "evidence",
+          "valid": true
+        }
+      },
+      "support_edges": [
+        [
+          "s+",
+          "a+"
+        ],
+        [
+          "s+",
+          "b+"
+        ]
+      ],
+      "versions": {
+        "a+": {
+          "identity": "a",
+          "kind": "new"
+        },
+        "a-": {
+          "identity": "a",
+          "kind": "old"
+        },
+        "b+": {
+          "identity": "b",
+          "kind": "new"
+        },
+        "b-": {
+          "identity": "b",
+          "kind": "old"
+        },
+        "r-": {
+          "identity": "root",
+          "kind": "old"
+        }
+      }
+    },
+    "online_input": {
+      "access": {
+        "a+": true,
+        "a-": true,
+        "b+": true,
+        "b-": true,
+        "r-": true
+      },
+      "check_messages": {
+        "validate:a+": "PASS",
+        "validate:b+": "PASS"
+      },
+      "logged_edges": [
+        [
+          "r-",
+          "b-"
+        ]
+      ],
+      "repair_status": {
+        "a+": "SUCCESS",
+        "b+": "SUCCESS"
+      },
+      "root": "r-",
+      "sources": {
+        "s+": {
+          "citeable": true,
+          "type": "evidence"
+        }
+      },
+      "state": {
+        "B": [],
+        "M": [
+          "r-",
+          "a-",
+          "b-"
+        ],
+        "P": [],
+        "Q": []
+      },
+      "versions": {
+        "a+": {
+          "identity": "a",
+          "kind": "new"
+        },
+        "a-": {
+          "identity": "a",
+          "kind": "old"
+        },
+        "b+": {
+          "identity": "b",
+          "kind": "new"
+        },
+        "b-": {
+          "identity": "b",
+          "kind": "old"
+        },
+        "r-": {
+          "identity": "root",
+          "kind": "old"
+        }
+      }
+    },
+    "script": [
+      {
+        "op": "quarantine",
+        "target": "a-"
+      },
+      {
+        "op": "repair",
+        "target": "a+"
+      },
+      {
+        "op": "terminate",
+        "publications": [
+          {
+            "cited_witness_id": "s+",
+            "successor_id": "a+"
+          }
+        ]
+      }
+    ]
+  },
+  "A03": {
+    "expected": {
+      "counters": {
+        "barrier_count": 1,
+        "optional_steps": 2,
+        "paid_query_count": 0,
+        "quarantine_count": 1,
+        "repair_count": 1,
+        "replacement_count": 0
+      },
+      "disposition": "TERMINATED",
+      "reject_reason": null,
+      "scores": {
+        "GlobalUnsafe": 1,
+        "NewUnsafe": 1,
+        "OldOtherUnsafe": 0,
+        "PubNew": 1,
+        "StaleServed": 0,
+        "W": 0,
+        "retained_valid_old_count": 0
+      },
+      "symbolic_costs": {
+        "barrier": "barrier_admin_cost",
+        "quarantine": "quarantine_admin_cost",
+        "replacement": "replacement_admin_cost"
+      },
+      "terminal": {
+        "B": [
+          "a-",
+          "b-",
+          "r-"
+        ],
+        "M": [
+          "a+"
+        ],
+        "P": [
+          "a+"
+        ],
+        "Q": []
+      }
+    },
+    "offline_truth": {
+      "authorized": {
+        "a+": true,
+        "a-": true,
+        "b+": true,
+        "b-": true,
+        "r-": true
+      },
+      "contaminated_origins": [
+        "root-origin"
+      ],
+      "content": {
+        "a+": true,
+        "a-": true,
+        "b+": true,
+        "b-": true,
+        "r-": false
+      },
+      "external_sources": [
+        "s+"
+      ],
+      "historical_edges": [
+        [
+          "r-",
+          "a-"
+        ],
+        [
+          "r-",
+          "b-"
+        ]
+      ],
+      "old_other_unsafe": {
+        "a-": false,
+        "b-": false,
+        "r-": false
+      },
+      "origin_edges": [
+        [
+          "root-origin",
+          "independent-origin"
+        ]
+      ],
+      "root": "r-",
+      "sources": {
+        "s+": {
+          "authorized": true,
+          "context_valid": true,
+          "origin": "independent-origin",
+          "role_allowed": true,
+          "scope_valid": true,
+          "supports": [
+            "a+",
+            "b+"
+          ],
+          "type": "evidence",
+          "valid": true
+        }
+      },
+      "support_edges": [
+        [
+          "s+",
+          "a+"
+        ],
+        [
+          "s+",
+          "b+"
+        ]
+      ],
+      "versions": {
+        "a+": {
+          "identity": "a",
+          "kind": "new"
+        },
+        "a-": {
+          "identity": "a",
+          "kind": "old"
+        },
+        "b+": {
+          "identity": "b",
+          "kind": "new"
+        },
+        "b-": {
+          "identity": "b",
+          "kind": "old"
+        },
+        "r-": {
+          "identity": "root",
+          "kind": "old"
+        }
+      }
+    },
+    "online_input": {
+      "access": {
+        "a+": true,
+        "a-": true,
+        "b+": true,
+        "b-": true,
+        "r-": true
+      },
+      "check_messages": {
+        "validate:a+": "PASS",
+        "validate:b+": "PASS"
+      },
+      "logged_edges": [
+        [
+          "r-",
+          "b-"
+        ]
+      ],
+      "repair_status": {
+        "a+": "SUCCESS",
+        "b+": "SUCCESS"
+      },
+      "root": "r-",
+      "sources": {
+        "s+": {
+          "citeable": true,
+          "type": "evidence"
+        }
+      },
+      "state": {
+        "B": [],
+        "M": [
+          "r-",
+          "a-",
+          "b-"
+        ],
+        "P": [],
+        "Q": []
+      },
+      "versions": {
+        "a+": {
+          "identity": "a",
+          "kind": "new"
+        },
+        "a-": {
+          "identity": "a",
+          "kind": "old"
+        },
+        "b+": {
+          "identity": "b",
+          "kind": "new"
+        },
+        "b-": {
+          "identity": "b",
+          "kind": "old"
+        },
+        "r-": {
+          "identity": "root",
+          "kind": "old"
+        }
+      }
+    },
+    "script": [
+      {
+        "op": "quarantine",
+        "target": "a-"
+      },
+      {
+        "op": "repair",
+        "target": "a+"
+      },
+      {
+        "op": "terminate",
+        "publications": [
+          {
+            "cited_witness_id": "s+",
+            "successor_id": "a+"
+          }
+        ]
+      }
+    ]
+  },
+  "A04": {
+    "expected": {
+      "counters": {
+        "barrier_count": 1,
+        "optional_steps": 3,
+        "paid_query_count": 1,
+        "quarantine_count": 1,
+        "repair_count": 1,
+        "replacement_count": 0
+      },
+      "disposition": "TERMINATED",
+      "reject_reason": null,
+      "scores": {
+        "GlobalUnsafe": 1,
+        "NewUnsafe": 1,
+        "OldOtherUnsafe": 0,
+        "PubNew": 1,
+        "StaleServed": 0,
+        "W": 0,
+        "retained_valid_old_count": 0
+      },
+      "symbolic_costs": {
+        "barrier": "barrier_admin_cost",
+        "quarantine": "quarantine_admin_cost",
+        "replacement": "replacement_admin_cost"
+      },
+      "terminal": {
+        "B": [
+          "a-",
+          "b-",
+          "r-"
+        ],
+        "M": [
+          "a+"
+        ],
+        "P": [
+          "a+"
+        ],
+        "Q": []
+      }
+    },
+    "offline_truth": {
+      "authorized": {
+        "a+": true,
+        "a-": true,
+        "b+": true,
+        "b-": true,
+        "r-": true
+      },
+      "contaminated_origins": [
+        "root-origin"
+      ],
+      "content": {
+        "a+": false,
+        "a-": true,
+        "b+": true,
+        "b-": true,
+        "r-": false
+      },
+      "external_sources": [
+        "s+"
+      ],
+      "historical_edges": [
+        [
+          "r-",
+          "a-"
+        ],
+        [
+          "r-",
+          "b-"
+        ]
+      ],
+      "old_other_unsafe": {
+        "a-": false,
+        "b-": false,
+        "r-": false
+      },
+      "origin_edges": [],
+      "root": "r-",
+      "sources": {
+        "s+": {
+          "authorized": true,
+          "context_valid": true,
+          "origin": "independent-origin",
+          "role_allowed": true,
+          "scope_valid": true,
+          "supports": [
+            "a+",
+            "b+"
+          ],
+          "type": "evidence",
+          "valid": true
+        }
+      },
+      "support_edges": [
+        [
+          "s+",
+          "a+"
+        ],
+        [
+          "s+",
+          "b+"
+        ]
+      ],
+      "versions": {
+        "a+": {
+          "identity": "a",
+          "kind": "new"
+        },
+        "a-": {
+          "identity": "a",
+          "kind": "old"
+        },
+        "b+": {
+          "identity": "b",
+          "kind": "new"
+        },
+        "b-": {
+          "identity": "b",
+          "kind": "old"
+        },
+        "r-": {
+          "identity": "root",
+          "kind": "old"
+        }
+      }
+    },
+    "online_input": {
+      "access": {
+        "a+": true,
+        "a-": true,
+        "b+": true,
+        "b-": true,
+        "r-": true
+      },
+      "check_messages": {
+        "validate:a+": "PASS",
+        "validate:b+": "PASS"
+      },
+      "logged_edges": [
+        [
+          "r-",
+          "b-"
+        ]
+      ],
+      "repair_status": {
+        "a+": "SUCCESS",
+        "b+": "SUCCESS"
+      },
+      "root": "r-",
+      "sources": {
+        "s+": {
+          "citeable": true,
+          "type": "evidence"
+        }
+      },
+      "state": {
+        "B": [],
+        "M": [
+          "r-",
+          "a-",
+          "b-"
+        ],
+        "P": [],
+        "Q": []
+      },
+      "versions": {
+        "a+": {
+          "identity": "a",
+          "kind": "new"
+        },
+        "a-": {
+          "identity": "a",
+          "kind": "old"
+        },
+        "b+": {
+          "identity": "b",
+          "kind": "new"
+        },
+        "b-": {
+          "identity": "b",
+          "kind": "old"
+        },
+        "r-": {
+          "identity": "root",
+          "kind": "old"
+        }
+      }
+    },
+    "script": [
+      {
+        "op": "quarantine",
+        "target": "a-"
+      },
+      {
+        "op": "repair",
+        "target": "a+"
+      },
+      {
+        "op": "validate",
+        "target": "a+"
+      },
+      {
+        "op": "terminate",
+        "publications": [
+          {
+            "cited_witness_id": "s+",
+            "successor_id": "a+"
+          }
+        ]
+      }
+    ]
+  },
+  "A05": {
+    "expected": {
+      "counters": {
+        "barrier_count": 1,
+        "optional_steps": 0,
+        "paid_query_count": 0,
+        "quarantine_count": 0,
+        "repair_count": 0,
+        "replacement_count": 0
+      },
+      "disposition": "REJECT",
+      "reject_reason": "not_staged",
+      "scores": {
+        "GlobalUnsafe": 1,
+        "NewUnsafe": 0,
+        "OldOtherUnsafe": 0,
+        "PubNew": 0,
+        "StaleServed": 1,
+        "W": 0,
+        "retained_valid_old_count": 0
+      },
+      "symbolic_costs": {
+        "barrier": "barrier_admin_cost",
+        "quarantine": "quarantine_admin_cost",
+        "replacement": "replacement_admin_cost"
+      },
+      "terminal": {
+        "B": [
+          "b-",
+          "r-"
+        ],
+        "M": [
+          "a-"
+        ],
+        "P": [],
+        "Q": []
+      }
+    },
+    "offline_truth": {
+      "authorized": {
+        "a+": true,
+        "a-": true,
+        "b+": true,
+        "b-": true,
+        "r-": true
+      },
+      "contaminated_origins": [
+        "root-origin"
+      ],
+      "content": {
+        "a+": true,
+        "a-": true,
+        "b+": true,
+        "b-": true,
+        "r-": false
+      },
+      "external_sources": [
+        "s+"
+      ],
+      "historical_edges": [
+        [
+          "r-",
+          "a-"
+        ],
+        [
+          "r-",
+          "b-"
+        ]
+      ],
+      "old_other_unsafe": {
+        "a-": false,
+        "b-": false,
+        "r-": false
+      },
+      "origin_edges": [],
+      "root": "r-",
+      "sources": {
+        "s+": {
+          "authorized": true,
+          "context_valid": true,
+          "origin": "independent-origin",
+          "role_allowed": true,
+          "scope_valid": true,
+          "supports": [
+            "a+",
+            "b+"
+          ],
+          "type": "evidence",
+          "valid": true
+        }
+      },
+      "support_edges": [
+        [
+          "s+",
+          "a+"
+        ],
+        [
+          "s+",
+          "b+"
+        ]
+      ],
+      "versions": {
+        "a+": {
+          "identity": "a",
+          "kind": "new"
+        },
+        "a-": {
+          "identity": "a",
+          "kind": "old"
+        },
+        "b+": {
+          "identity": "b",
+          "kind": "new"
+        },
+        "b-": {
+          "identity": "b",
+          "kind": "old"
+        },
+        "r-": {
+          "identity": "root",
+          "kind": "old"
+        }
+      }
+    },
+    "online_input": {
+      "access": {
+        "a+": true,
+        "a-": true,
+        "b+": true,
+        "b-": true,
+        "r-": true
+      },
+      "check_messages": {
+        "validate:a+": "PASS",
+        "validate:b+": "PASS"
+      },
+      "logged_edges": [
+        [
+          "r-",
+          "b-"
+        ]
+      ],
+      "repair_status": {
+        "a+": "SUCCESS",
+        "b+": "SUCCESS"
+      },
+      "root": "r-",
+      "sources": {
+        "s+": {
+          "citeable": true,
+          "type": "evidence"
+        }
+      },
+      "state": {
+        "B": [],
+        "M": [
+          "r-",
+          "a-",
+          "b-"
+        ],
+        "P": [],
+        "Q": []
+      },
+      "versions": {
+        "a+": {
+          "identity": "a",
+          "kind": "new"
+        },
+        "a-": {
+          "identity": "a",
+          "kind": "old"
+        },
+        "b+": {
+          "identity": "b",
+          "kind": "new"
+        },
+        "b-": {
+          "identity": "b",
+          "kind": "old"
+        },
+        "r-": {
+          "identity": "root",
+          "kind": "old"
+        }
+      }
+    },
+    "script": [
+      {
+        "op": "terminate",
+        "publications": [
+          {
+            "cited_witness_id": "s+",
+            "successor_id": "a+"
+          }
+        ]
+      }
+    ]
+  },
+  "A06": {
+    "expected": {
+      "counters": {
+        "barrier_count": 1,
+        "optional_steps": 1,
+        "paid_query_count": 0,
+        "quarantine_count": 0,
+        "repair_count": 1,
+        "replacement_count": 1
+      },
+      "disposition": "TERMINATED",
+      "reject_reason": null,
+      "scores": {
+        "GlobalUnsafe": 0,
+        "NewUnsafe": 0,
+        "OldOtherUnsafe": 0,
+        "PubNew": 1,
+        "StaleServed": 0,
+        "W": 1,
+        "retained_valid_old_count": 0
+      },
+      "symbolic_costs": {
+        "barrier": "barrier_admin_cost",
+        "quarantine": "quarantine_admin_cost",
+        "replacement": "replacement_admin_cost"
+      },
+      "terminal": {
+        "B": [
+          "a-",
+          "b-",
+          "r-"
+        ],
+        "M": [
+          "a+"
+        ],
+        "P": [
+          "a+"
+        ],
+        "Q": []
+      }
+    },
+    "offline_truth": {
+      "authorized": {
+        "a+": true,
+        "a-": true,
+        "b+": true,
+        "b-": true,
+        "r-": true
+      },
+      "contaminated_origins": [
+        "root-origin"
+      ],
+      "content": {
+        "a+": true,
+        "a-": true,
+        "b+": true,
+        "b-": true,
+        "r-": false
+      },
+      "external_sources": [
+        "s+"
+      ],
+      "historical_edges": [
+        [
+          "r-",
+          "a-"
+        ],
+        [
+          "r-",
+          "b-"
+        ]
+      ],
+      "old_other_unsafe": {
+        "a-": false,
+        "b-": false,
+        "r-": false
+      },
+      "origin_edges": [],
+      "root": "r-",
+      "sources": {
+        "s+": {
+          "authorized": true,
+          "context_valid": true,
+          "origin": "independent-origin",
+          "role_allowed": true,
+          "scope_valid": true,
+          "supports": [
+            "a+",
+            "b+"
+          ],
+          "type": "evidence",
+          "valid": true
+        }
+      },
+      "support_edges": [
+        [
+          "s+",
+          "a+"
+        ],
+        [
+          "s+",
+          "b+"
+        ]
+      ],
+      "versions": {
+        "a+": {
+          "identity": "a",
+          "kind": "new"
+        },
+        "a-": {
+          "identity": "a",
+          "kind": "old"
+        },
+        "b+": {
+          "identity": "b",
+          "kind": "new"
+        },
+        "b-": {
+          "identity": "b",
+          "kind": "old"
+        },
+        "r-": {
+          "identity": "root",
+          "kind": "old"
+        }
+      }
+    },
+    "online_input": {
+      "access": {
+        "a+": true,
+        "a-": true,
+        "b+": true,
+        "b-": true,
+        "r-": true
+      },
+      "check_messages": {
+        "validate:a+": "PASS",
+        "validate:b+": "PASS"
+      },
+      "logged_edges": [
+        [
+          "r-",
+          "b-"
+        ]
+      ],
+      "repair_status": {
+        "a+": "SUCCESS",
+        "b+": "SUCCESS"
+      },
+      "root": "r-",
+      "sources": {
+        "s+": {
+          "citeable": true,
+          "type": "evidence"
+        }
+      },
+      "state": {
+        "B": [],
+        "M": [
+          "r-",
+          "a-",
+          "b-"
+        ],
+        "P": [],
+        "Q": []
+      },
+      "versions": {
+        "a+": {
+          "identity": "a",
+          "kind": "new"
+        },
+        "a-": {
+          "identity": "a",
+          "kind": "old"
+        },
+        "b+": {
+          "identity": "b",
+          "kind": "new"
+        },
+        "b-": {
+          "identity": "b",
+          "kind": "old"
+        },
+        "r-": {
+          "identity": "root",
+          "kind": "old"
+        }
+      }
+    },
+    "script": [
+      {
+        "op": "repair",
+        "target": "a+"
+      },
+      {
+        "op": "terminate",
+        "publications": [
+          {
+            "cited_witness_id": "s+",
+            "successor_id": "a+"
+          }
+        ]
+      }
+    ]
+  },
+  "A07": {
+    "expected": {
+      "counters": {
+        "barrier_count": 1,
+        "optional_steps": 4,
+        "paid_query_count": 2,
+        "quarantine_count": 0,
+        "repair_count": 2,
+        "replacement_count": 0
+      },
+      "disposition": "TERMINATED",
+      "reject_reason": null,
+      "scores": {
+        "GlobalUnsafe": 1,
+        "NewUnsafe": 0,
+        "OldOtherUnsafe": 0,
+        "PubNew": 0,
+        "StaleServed": 1,
+        "W": 0,
+        "retained_valid_old_count": 0
+      },
+      "symbolic_costs": {
+        "barrier": "barrier_admin_cost",
+        "quarantine": "quarantine_admin_cost",
+        "replacement": "replacement_admin_cost"
+      },
+      "terminal": {
+        "B": [
+          "b-",
+          "r-"
+        ],
+        "M": [
+          "a-"
+        ],
+        "P": [],
+        "Q": [
+          "a+",
+          "b+"
+        ]
+      }
+    },
+    "offline_truth": {
+      "authorized": {
+        "a+": true,
+        "a-": true,
+        "b+": true,
+        "b-": true,
+        "r-": true
+      },
+      "contaminated_origins": [
+        "root-origin"
+      ],
+      "content": {
+        "a+": true,
+        "a-": true,
+        "b+": true,
+        "b-": true,
+        "r-": false
+      },
+      "external_sources": [
+        "s+"
+      ],
+      "historical_edges": [
+        [
+          "r-",
+          "a-"
+        ],
+        [
+          "r-",
+          "b-"
+        ]
+      ],
+      "old_other_unsafe": {
+        "a-": false,
+        "b-": false,
+        "r-": false
+      },
+      "origin_edges": [],
+      "root": "r-",
+      "sources": {
+        "s+": {
+          "authorized": true,
+          "context_valid": true,
+          "origin": "independent-origin",
+          "role_allowed": true,
+          "scope_valid": true,
+          "supports": [
+            "a+",
+            "b+"
+          ],
+          "type": "evidence",
+          "valid": true
+        }
+      },
+      "support_edges": [
+        [
+          "s+",
+          "a+"
+        ],
+        [
+          "s+",
+          "b+"
+        ]
+      ],
+      "versions": {
+        "a+": {
+          "identity": "a",
+          "kind": "new"
+        },
+        "a-": {
+          "identity": "a",
+          "kind": "old"
+        },
+        "b+": {
+          "identity": "b",
+          "kind": "new"
+        },
+        "b-": {
+          "identity": "b",
+          "kind": "old"
+        },
+        "r-": {
+          "identity": "root",
+          "kind": "old"
+        }
+      }
+    },
+    "online_input": {
+      "access": {
+        "a+": true,
+        "a-": true,
+        "b+": true,
+        "b-": true,
+        "r-": true
+      },
+      "check_messages": {
+        "validate:a+": "PASS",
+        "validate:b+": "PASS"
+      },
+      "logged_edges": [
+        [
+          "r-",
+          "b-"
+        ]
+      ],
+      "repair_status": {
+        "a+": "SUCCESS",
+        "b+": "SUCCESS"
+      },
+      "root": "r-",
+      "sources": {
+        "s+": {
+          "citeable": true,
+          "type": "evidence"
+        }
+      },
+      "state": {
+        "B": [],
+        "M": [
+          "r-",
+          "a-",
+          "b-"
+        ],
+        "P": [],
+        "Q": []
+      },
+      "versions": {
+        "a+": {
+          "identity": "a",
+          "kind": "new"
+        },
+        "a-": {
+          "identity": "a",
+          "kind": "old"
+        },
+        "b+": {
+          "identity": "b",
+          "kind": "new"
+        },
+        "b-": {
+          "identity": "b",
+          "kind": "old"
+        },
+        "r-": {
+          "identity": "root",
+          "kind": "old"
+        }
+      }
+    },
+    "script": [
+      {
+        "op": "repair",
+        "target": "a+"
+      },
+      {
+        "op": "repair",
+        "target": "b+"
+      },
+      {
+        "op": "validate",
+        "target": "a+"
+      },
+      {
+        "op": "validate",
+        "target": "b+"
+      },
+      {
+        "op": "terminate",
+        "publications": []
+      }
+    ]
+  },
+  "A08": {
+    "expected": {
+      "counters": {
+        "barrier_count": 1,
+        "optional_steps": 4,
+        "paid_query_count": 2,
+        "quarantine_count": 0,
+        "repair_count": 2,
+        "replacement_count": 0
+      },
+      "disposition": "REJECT",
+      "reject_reason": "horizon",
+      "scores": {
+        "GlobalUnsafe": 1,
+        "NewUnsafe": 0,
+        "OldOtherUnsafe": 0,
+        "PubNew": 0,
+        "StaleServed": 1,
+        "W": 0,
+        "retained_valid_old_count": 0
+      },
+      "symbolic_costs": {
+        "barrier": "barrier_admin_cost",
+        "quarantine": "quarantine_admin_cost",
+        "replacement": "replacement_admin_cost"
+      },
+      "terminal": {
+        "B": [
+          "b-",
+          "r-"
+        ],
+        "M": [
+          "a-"
+        ],
+        "P": [],
+        "Q": [
+          "a+",
+          "b+"
+        ]
+      }
+    },
+    "offline_truth": {
+      "authorized": {
+        "a+": true,
+        "a-": true,
+        "b+": true,
+        "b-": true,
+        "r-": true
+      },
+      "contaminated_origins": [
+        "root-origin"
+      ],
+      "content": {
+        "a+": true,
+        "a-": true,
+        "b+": true,
+        "b-": true,
+        "r-": false
+      },
+      "external_sources": [
+        "s+"
+      ],
+      "historical_edges": [
+        [
+          "r-",
+          "a-"
+        ],
+        [
+          "r-",
+          "b-"
+        ]
+      ],
+      "old_other_unsafe": {
+        "a-": false,
+        "b-": false,
+        "r-": false
+      },
+      "origin_edges": [],
+      "root": "r-",
+      "sources": {
+        "s+": {
+          "authorized": true,
+          "context_valid": true,
+          "origin": "independent-origin",
+          "role_allowed": true,
+          "scope_valid": true,
+          "supports": [
+            "a+",
+            "b+"
+          ],
+          "type": "evidence",
+          "valid": true
+        }
+      },
+      "support_edges": [
+        [
+          "s+",
+          "a+"
+        ],
+        [
+          "s+",
+          "b+"
+        ]
+      ],
+      "versions": {
+        "a+": {
+          "identity": "a",
+          "kind": "new"
+        },
+        "a-": {
+          "identity": "a",
+          "kind": "old"
+        },
+        "b+": {
+          "identity": "b",
+          "kind": "new"
+        },
+        "b-": {
+          "identity": "b",
+          "kind": "old"
+        },
+        "r-": {
+          "identity": "root",
+          "kind": "old"
+        }
+      }
+    },
+    "online_input": {
+      "access": {
+        "a+": true,
+        "a-": true,
+        "b+": true,
+        "b-": true,
+        "r-": true
+      },
+      "check_messages": {
+        "validate:a+": "PASS",
+        "validate:b+": "PASS"
+      },
+      "logged_edges": [
+        [
+          "r-",
+          "b-"
+        ]
+      ],
+      "repair_status": {
+        "a+": "SUCCESS",
+        "b+": "SUCCESS"
+      },
+      "root": "r-",
+      "sources": {
+        "s+": {
+          "citeable": true,
+          "type": "evidence"
+        }
+      },
+      "state": {
+        "B": [],
+        "M": [
+          "r-",
+          "a-",
+          "b-"
+        ],
+        "P": [],
+        "Q": []
+      },
+      "versions": {
+        "a+": {
+          "identity": "a",
+          "kind": "new"
+        },
+        "a-": {
+          "identity": "a",
+          "kind": "old"
+        },
+        "b+": {
+          "identity": "b",
+          "kind": "new"
+        },
+        "b-": {
+          "identity": "b",
+          "kind": "old"
+        },
+        "r-": {
+          "identity": "root",
+          "kind": "old"
+        }
+      }
+    },
+    "script": [
+      {
+        "op": "repair",
+        "target": "a+"
+      },
+      {
+        "op": "repair",
+        "target": "b+"
+      },
+      {
+        "op": "validate",
+        "target": "a+"
+      },
+      {
+        "op": "validate",
+        "target": "b+"
+      },
+      {
+        "op": "quarantine",
+        "target": "a-"
+      }
+    ]
+  },
+  "A09": {
+    "expected": {
+      "counters": {
+        "barrier_count": 1,
+        "optional_steps": 0,
+        "paid_query_count": 0,
+        "quarantine_count": 0,
+        "repair_count": 0,
+        "replacement_count": 0
+      },
+      "disposition": "TERMINATED",
+      "reject_reason": null,
+      "scores": {
+        "GlobalUnsafe": 0,
+        "NewUnsafe": 0,
+        "OldOtherUnsafe": 0,
+        "PubNew": 0,
+        "StaleServed": 0,
+        "W": 0,
+        "retained_valid_old_count": 0
+      },
+      "symbolic_costs": {
+        "barrier": "barrier_admin_cost",
+        "quarantine": "quarantine_admin_cost",
+        "replacement": "replacement_admin_cost"
+      },
+      "terminal": {
+        "B": [
+          "a-",
+          "b-",
+          "r-"
+        ],
+        "M": [],
+        "P": [],
+        "Q": []
+      }
+    },
+    "offline_truth": {
+      "authorized": {
+        "a+": true,
+        "a-": true,
+        "b+": true,
+        "b-": true,
+        "r-": true
+      },
+      "contaminated_origins": [
+        "root-origin"
+      ],
+      "content": {
+        "a+": true,
+        "a-": true,
+        "b+": true,
+        "b-": true,
+        "r-": false
+      },
+      "external_sources": [
+        "s+"
+      ],
+      "historical_edges": [
+        [
+          "r-",
+          "a-"
+        ],
+        [
+          "r-",
+          "b-"
+        ]
+      ],
+      "old_other_unsafe": {
+        "a-": false,
+        "b-": false,
+        "r-": false
+      },
+      "origin_edges": [],
+      "root": "r-",
+      "sources": {
+        "s+": {
+          "authorized": true,
+          "context_valid": true,
+          "origin": "independent-origin",
+          "role_allowed": true,
+          "scope_valid": true,
+          "supports": [
+            "a+",
+            "b+"
+          ],
+          "type": "evidence",
+          "valid": true
+        }
+      },
+      "support_edges": [
+        [
+          "s+",
+          "a+"
+        ],
+        [
+          "s+",
+          "b+"
+        ]
+      ],
+      "versions": {
+        "a+": {
+          "identity": "a",
+          "kind": "new"
+        },
+        "a-": {
+          "identity": "a",
+          "kind": "old"
+        },
+        "b+": {
+          "identity": "b",
+          "kind": "new"
+        },
+        "b-": {
+          "identity": "b",
+          "kind": "old"
+        },
+        "r-": {
+          "identity": "root",
+          "kind": "old"
+        }
+      }
+    },
+    "online_input": {
+      "access": {
+        "a+": true,
+        "a-": true,
+        "b+": true,
+        "b-": true,
+        "r-": true
+      },
+      "check_messages": {
+        "validate:a+": "PASS",
+        "validate:b+": "PASS"
+      },
+      "logged_edges": [
+        [
+          "r-",
+          "b-"
+        ],
+        [
+          "r-",
+          "a-"
+        ]
+      ],
+      "repair_status": {
+        "a+": "SUCCESS",
+        "b+": "SUCCESS"
+      },
+      "root": "r-",
+      "sources": {
+        "s+": {
+          "citeable": true,
+          "type": "evidence"
+        }
+      },
+      "state": {
+        "B": [],
+        "M": [
+          "r-",
+          "a-",
+          "b-"
+        ],
+        "P": [],
+        "Q": []
+      },
+      "versions": {
+        "a+": {
+          "identity": "a",
+          "kind": "new"
+        },
+        "a-": {
+          "identity": "a",
+          "kind": "old"
+        },
+        "b+": {
+          "identity": "b",
+          "kind": "new"
+        },
+        "b-": {
+          "identity": "b",
+          "kind": "old"
+        },
+        "r-": {
+          "identity": "root",
+          "kind": "old"
+        }
+      }
+    },
+    "script": [
+      {
+        "op": "terminate",
+        "publications": []
+      }
+    ]
+  },
+  "A10": {
+    "variants": [
+      {
+        "expected": {
+          "counters": {
+            "barrier_count": 1,
+            "optional_steps": 2,
+            "paid_query_count": 0,
+            "quarantine_count": 1,
+            "repair_count": 1,
+            "replacement_count": 0
+          },
+          "disposition": "TERMINATED",
+          "reject_reason": null,
+          "scores": {
+            "GlobalUnsafe": 0,
+            "NewUnsafe": 0,
+            "OldOtherUnsafe": 0,
+            "PubNew": 1,
+            "StaleServed": 0,
+            "W": 1,
+            "retained_valid_old_count": 0
+          },
+          "symbolic_costs": {
+            "barrier": "barrier_admin_cost",
+            "quarantine": "quarantine_admin_cost",
+            "replacement": "replacement_admin_cost"
+          },
+          "terminal": {
+            "B": [
+              "a-",
+              "b-",
+              "r-"
+            ],
+            "M": [
+              "a+"
+            ],
+            "P": [
+              "a+"
+            ],
+            "Q": []
+          }
+        },
+        "offline_truth": {
+          "authorized": {
+            "a+": true,
+            "a-": true,
+            "b+": true,
+            "b-": true,
+            "r-": true
+          },
+          "contaminated_origins": [
+            "root-origin"
+          ],
+          "content": {
+            "a+": true,
+            "a-": true,
+            "b+": true,
+            "b-": true,
+            "r-": false
+          },
+          "external_sources": [
+            "s+"
+          ],
+          "historical_edges": [
+            [
+              "r-",
+              "a-"
+            ],
+            [
+              "r-",
+              "b-"
+            ]
+          ],
+          "old_other_unsafe": {
+            "a-": false,
+            "b-": false,
+            "r-": false
+          },
+          "origin_edges": [],
+          "root": "r-",
+          "sources": {
+            "s+": {
+              "authorized": true,
+              "context_valid": true,
+              "origin": "independent-origin",
+              "role_allowed": true,
+              "scope_valid": true,
+              "supports": [
+                "a+",
+                "b+"
+              ],
+              "type": "evidence",
+              "valid": true
+            }
+          },
+          "support_edges": [
+            [
+              "s+",
+              "a+"
+            ],
+            [
+              "s+",
+              "b+"
+            ]
+          ],
+          "versions": {
+            "a+": {
+              "identity": "a",
+              "kind": "new"
+            },
+            "a-": {
+              "identity": "a",
+              "kind": "old"
+            },
+            "b+": {
+              "identity": "b",
+              "kind": "new"
+            },
+            "b-": {
+              "identity": "b",
+              "kind": "old"
+            },
+            "r-": {
+              "identity": "root",
+              "kind": "old"
+            }
+          }
+        },
+        "online_input": {
+          "access": {
+            "a+": true,
+            "a-": true,
+            "b+": true,
+            "b-": true,
+            "r-": true
+          },
+          "check_messages": {
+            "validate:a+": "PASS",
+            "validate:b+": "PASS"
+          },
+          "logged_edges": [
+            [
+              "r-",
+              "b-"
+            ]
+          ],
+          "repair_status": {
+            "a+": "SUCCESS",
+            "b+": "SUCCESS"
+          },
+          "root": "r-",
+          "sources": {
+            "s+": {
+              "citeable": true,
+              "type": "evidence"
+            }
+          },
+          "state": {
+            "B": [],
+            "M": [
+              "r-",
+              "a-",
+              "b-"
+            ],
+            "P": [],
+            "Q": []
+          },
+          "versions": {
+            "a+": {
+              "identity": "a",
+              "kind": "new"
+            },
+            "a-": {
+              "identity": "a",
+              "kind": "old"
+            },
+            "b+": {
+              "identity": "b",
+              "kind": "new"
+            },
+            "b-": {
+              "identity": "b",
+              "kind": "old"
+            },
+            "r-": {
+              "identity": "root",
+              "kind": "old"
+            }
+          }
+        },
+        "script": [
+          {
+            "op": "quarantine",
+            "target": "a-"
+          },
+          {
+            "op": "repair",
+            "target": "a+"
+          },
+          {
+            "op": "terminate",
+            "publications": [
+              {
+                "cited_witness_id": "s+",
+                "successor_id": "a+"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "expected": {
+          "counters": {
+            "barrier_count": 1,
+            "optional_steps": 2,
+            "paid_query_count": 0,
+            "quarantine_count": 1,
+            "repair_count": 1,
+            "replacement_count": 0
+          },
+          "disposition": "TERMINATED",
+          "reject_reason": null,
+          "scores": {
+            "GlobalUnsafe": 1,
+            "NewUnsafe": 1,
+            "OldOtherUnsafe": 0,
+            "PubNew": 1,
+            "StaleServed": 0,
+            "W": 0,
+            "retained_valid_old_count": 0
+          },
+          "symbolic_costs": {
+            "barrier": "barrier_admin_cost",
+            "quarantine": "quarantine_admin_cost",
+            "replacement": "replacement_admin_cost"
+          },
+          "terminal": {
+            "B": [
+              "a-",
+              "b-",
+              "r-"
+            ],
+            "M": [
+              "a+"
+            ],
+            "P": [
+              "a+"
+            ],
+            "Q": []
+          }
+        },
+        "offline_truth": {
+          "authorized": {
+            "a+": true,
+            "a-": true,
+            "b+": true,
+            "b-": true,
+            "r-": true
+          },
+          "contaminated_origins": [
+            "root-origin"
+          ],
+          "content": {
+            "a+": false,
+            "a-": true,
+            "b+": true,
+            "b-": true,
+            "r-": false
+          },
+          "external_sources": [
+            "s+"
+          ],
+          "historical_edges": [
+            [
+              "r-",
+              "a-"
+            ],
+            [
+              "r-",
+              "b-"
+            ]
+          ],
+          "old_other_unsafe": {
+            "a-": false,
+            "b-": false,
+            "r-": false
+          },
+          "origin_edges": [],
+          "root": "r-",
+          "sources": {
+            "s+": {
+              "authorized": true,
+              "context_valid": true,
+              "origin": "independent-origin",
+              "role_allowed": true,
+              "scope_valid": true,
+              "supports": [
+                "a+",
+                "b+"
+              ],
+              "type": "evidence",
+              "valid": true
+            }
+          },
+          "support_edges": [
+            [
+              "s+",
+              "a+"
+            ],
+            [
+              "s+",
+              "b+"
+            ]
+          ],
+          "versions": {
+            "a+": {
+              "identity": "a",
+              "kind": "new"
+            },
+            "a-": {
+              "identity": "a",
+              "kind": "old"
+            },
+            "b+": {
+              "identity": "b",
+              "kind": "new"
+            },
+            "b-": {
+              "identity": "b",
+              "kind": "old"
+            },
+            "r-": {
+              "identity": "root",
+              "kind": "old"
+            }
+          }
+        },
+        "online_input": {
+          "access": {
+            "a+": true,
+            "a-": true,
+            "b+": true,
+            "b-": true,
+            "r-": true
+          },
+          "check_messages": {
+            "validate:a+": "PASS",
+            "validate:b+": "PASS"
+          },
+          "logged_edges": [
+            [
+              "r-",
+              "b-"
+            ]
+          ],
+          "repair_status": {
+            "a+": "SUCCESS",
+            "b+": "SUCCESS"
+          },
+          "root": "r-",
+          "sources": {
+            "s+": {
+              "citeable": true,
+              "type": "evidence"
+            }
+          },
+          "state": {
+            "B": [],
+            "M": [
+              "r-",
+              "a-",
+              "b-"
+            ],
+            "P": [],
+            "Q": []
+          },
+          "versions": {
+            "a+": {
+              "identity": "a",
+              "kind": "new"
+            },
+            "a-": {
+              "identity": "a",
+              "kind": "old"
+            },
+            "b+": {
+              "identity": "b",
+              "kind": "new"
+            },
+            "b-": {
+              "identity": "b",
+              "kind": "old"
+            },
+            "r-": {
+              "identity": "root",
+              "kind": "old"
+            }
+          }
+        },
+        "script": [
+          {
+            "op": "quarantine",
+            "target": "a-"
+          },
+          {
+            "op": "repair",
+            "target": "a+"
+          },
+          {
+            "op": "terminate",
+            "publications": [
+              {
+                "cited_witness_id": "s+",
+                "successor_id": "a+"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "A11": {
+    "expected": {
+      "counters": {
+        "barrier_count": 1,
+        "optional_steps": 2,
+        "paid_query_count": 0,
+        "quarantine_count": 0,
+        "repair_count": 2,
+        "replacement_count": 0
+      },
+      "disposition": "TERMINATED",
+      "reject_reason": null,
+      "scores": {
+        "GlobalUnsafe": 0,
+        "NewUnsafe": 0,
+        "OldOtherUnsafe": 0,
+        "PubNew": 0,
+        "StaleServed": 0,
+        "W": 0,
+        "retained_valid_old_count": 0
+      },
+      "symbolic_costs": {
+        "barrier": "barrier_admin_cost",
+        "quarantine": "quarantine_admin_cost",
+        "replacement": "replacement_admin_cost"
+      },
+      "terminal": {
+        "B": [
+          "a-",
+          "b-",
+          "r-"
+        ],
+        "M": [],
+        "P": [],
+        "Q": []
+      }
+    },
+    "offline_truth": {
+      "authorized": {
+        "a+": true,
+        "a-": true,
+        "b+": true,
+        "b-": true,
+        "r-": true
+      },
+      "contaminated_origins": [
+        "root-origin"
+      ],
+      "content": {
+        "a+": true,
+        "a-": true,
+        "b+": true,
+        "b-": true,
+        "r-": false
+      },
+      "external_sources": [
+        "s+"
+      ],
+      "historical_edges": [
+        [
+          "r-",
+          "a-"
+        ],
+        [
+          "r-",
+          "b-"
+        ]
+      ],
+      "old_other_unsafe": {
+        "a-": false,
+        "b-": false,
+        "r-": false
+      },
+      "origin_edges": [],
+      "root": "r-",
+      "sources": {
+        "s+": {
+          "authorized": true,
+          "context_valid": true,
+          "origin": "independent-origin",
+          "role_allowed": true,
+          "scope_valid": true,
+          "supports": [
+            "a+",
+            "b+"
+          ],
+          "type": "evidence",
+          "valid": true
+        }
+      },
+      "support_edges": [
+        [
+          "s+",
+          "a+"
+        ],
+        [
+          "s+",
+          "b+"
+        ]
+      ],
+      "versions": {
+        "a+": {
+          "identity": "a",
+          "kind": "new"
+        },
+        "a-": {
+          "identity": "a",
+          "kind": "old"
+        },
+        "b+": {
+          "identity": "b",
+          "kind": "new"
+        },
+        "b-": {
+          "identity": "b",
+          "kind": "old"
+        },
+        "r-": {
+          "identity": "root",
+          "kind": "old"
+        }
+      }
+    },
+    "online_input": {
+      "access": {
+        "a+": true,
+        "a-": true,
+        "b+": true,
+        "b-": true,
+        "r-": true
+      },
+      "check_messages": {
+        "validate:a+": "PASS",
+        "validate:b+": "PASS"
+      },
+      "logged_edges": [
+        [
+          "r-",
+          "b-"
+        ],
+        [
+          "r-",
+          "a-"
+        ]
+      ],
+      "repair_status": {
+        "a+": "FAIL",
+        "b+": "FAIL"
+      },
+      "root": "r-",
+      "sources": {
+        "s+": {
+          "citeable": true,
+          "type": "evidence"
+        }
+      },
+      "state": {
+        "B": [],
+        "M": [
+          "r-",
+          "a-",
+          "b-"
+        ],
+        "P": [],
+        "Q": []
+      },
+      "versions": {
+        "a+": {
+          "identity": "a",
+          "kind": "new"
+        },
+        "a-": {
+          "identity": "a",
+          "kind": "old"
+        },
+        "b+": {
+          "identity": "b",
+          "kind": "new"
+        },
+        "b-": {
+          "identity": "b",
+          "kind": "old"
+        },
+        "r-": {
+          "identity": "root",
+          "kind": "old"
+        }
+      }
+    },
+    "script": [
+      {
+        "op": "repair",
+        "target": "a+"
+      },
+      {
+        "op": "repair",
+        "target": "b+"
+      },
+      {
+        "op": "terminate",
+        "publications": []
+      }
+    ]
+  },
+  "A12": {
+    "expected": {
+      "counters": {
+        "barrier_count": 1,
+        "optional_steps": 1,
+        "paid_query_count": 0,
+        "quarantine_count": 0,
+        "repair_count": 1,
+        "replacement_count": 0
+      },
+      "disposition": "TERMINATED",
+      "reject_reason": null,
+      "scores": {
+        "GlobalUnsafe": 0,
+        "NewUnsafe": 0,
+        "OldOtherUnsafe": 0,
+        "PubNew": 1,
+        "StaleServed": 0,
+        "W": 1,
+        "retained_valid_old_count": 1
+      },
+      "symbolic_costs": {
+        "barrier": "barrier_admin_cost",
+        "quarantine": "quarantine_admin_cost",
+        "replacement": "replacement_admin_cost"
+      },
+      "terminal": {
+        "B": [
+          "a-",
+          "b-",
+          "r-"
+        ],
+        "M": [
+          "a+",
+          "c-"
+        ],
+        "P": [
+          "a+"
+        ],
+        "Q": []
+      }
+    },
+    "offline_truth": {
+      "authorized": {
+        "a+": true,
+        "a-": true,
+        "b+": true,
+        "b-": true,
+        "c-": true,
+        "r-": true
+      },
+      "contaminated_origins": [
+        "root-origin"
+      ],
+      "content": {
+        "a+": true,
+        "a-": true,
+        "b+": true,
+        "b-": true,
+        "c-": true,
+        "r-": false
+      },
+      "external_sources": [
+        "s+"
+      ],
+      "historical_edges": [
+        [
+          "r-",
+          "a-"
+        ],
+        [
+          "r-",
+          "b-"
+        ]
+      ],
+      "old_other_unsafe": {
+        "a-": false,
+        "b-": false,
+        "c-": false,
+        "r-": false
+      },
+      "origin_edges": [],
+      "root": "r-",
+      "sources": {
+        "s+": {
+          "authorized": true,
+          "context_valid": true,
+          "origin": "independent-origin",
+          "role_allowed": true,
+          "scope_valid": true,
+          "supports": [
+            "a+",
+            "b+"
+          ],
+          "type": "evidence",
+          "valid": true
+        }
+      },
+      "support_edges": [
+        [
+          "s+",
+          "a+"
+        ],
+        [
+          "s+",
+          "b+"
+        ]
+      ],
+      "versions": {
+        "a+": {
+          "identity": "a",
+          "kind": "new"
+        },
+        "a-": {
+          "identity": "a",
+          "kind": "old"
+        },
+        "b+": {
+          "identity": "b",
+          "kind": "new"
+        },
+        "b-": {
+          "identity": "b",
+          "kind": "old"
+        },
+        "c-": {
+          "identity": "c",
+          "kind": "old"
+        },
+        "r-": {
+          "identity": "root",
+          "kind": "old"
+        }
+      }
+    },
+    "online_input": {
+      "access": {
+        "a+": true,
+        "a-": true,
+        "b+": true,
+        "b-": true,
+        "c-": true,
+        "r-": true
+      },
+      "check_messages": {
+        "validate:a+": "PASS",
+        "validate:b+": "PASS"
+      },
+      "logged_edges": [
+        [
+          "r-",
+          "b-"
+        ],
+        [
+          "r-",
+          "a-"
+        ]
+      ],
+      "repair_status": {
+        "a+": "SUCCESS",
+        "b+": "SUCCESS"
+      },
+      "root": "r-",
+      "sources": {
+        "s+": {
+          "citeable": true,
+          "type": "evidence"
+        }
+      },
+      "state": {
+        "B": [],
+        "M": [
+          "r-",
+          "a-",
+          "b-",
+          "c-"
+        ],
+        "P": [],
+        "Q": []
+      },
+      "versions": {
+        "a+": {
+          "identity": "a",
+          "kind": "new"
+        },
+        "a-": {
+          "identity": "a",
+          "kind": "old"
+        },
+        "b+": {
+          "identity": "b",
+          "kind": "new"
+        },
+        "b-": {
+          "identity": "b",
+          "kind": "old"
+        },
+        "c-": {
+          "identity": "c",
+          "kind": "old"
+        },
+        "r-": {
+          "identity": "root",
+          "kind": "old"
+        }
+      }
+    },
+    "script": [
+      {
+        "op": "repair",
+        "target": "a+"
+      },
+      {
+        "op": "terminate",
+        "publications": [
+          {
+            "cited_witness_id": "s+",
+            "successor_id": "a+"
+          }
+        ]
+      }
+    ]
+  }
+}

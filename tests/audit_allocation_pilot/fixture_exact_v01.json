@@ -1,0 +1,15 @@
+{
+  "kind": "synthetic frozen contract; not observations",
+  "conditions": {"L": ["17/20", "3/4"], "R": ["3/4", "17/20"]},
+  "sensitivity": "9/10", "false_pass": "1/10", "delta": "1/5", "K": 2,
+  "atoms_per_condition": 16,
+  "prior_good": "51/80",
+  "good_audit": {"pass_probability": "7/10", "posterior_good": "459/560", "conditional_unsafe": "101/560", "W": "459/800", "unsafe": "101/800", "expected_K": "13/10", "max_K": 2},
+  "wrong_audit": {"pass_probability": "39/50", "posterior_good": "153/208", "conditional_unsafe": "55/208", "W": "0", "unsafe": "0", "expected_K": "2", "max_K": 2},
+  "quarantine": {"W": "0", "unsafe": "0", "expected_K": "1", "max_K": 1},
+  "expected": {
+    "L": {"P_E": "good_audit", "P_C": "wrong_audit", "P_Q": "quarantine", "P_OPT": "good_audit"},
+    "R": {"P_E": "wrong_audit", "P_C": "good_audit", "P_Q": "quarantine", "P_OPT": "good_audit"}
+  },
+  "excluded_costs": {"staging_repair": "symbolic S per episode", "publication_administration": "symbolic A per publication"}
+}
